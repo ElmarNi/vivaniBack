@@ -1,0 +1,385 @@
+﻿@model HomeVm
+<section id="slider">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="owl-carousel">
+                    @foreach (var item in Model.homeSliders)
+                    {
+                        <div class="custom-item" style="background-image: url(@item.ImageUrl);">
+                            <div class="content">
+                                <p>@item.LittleHeader</p>
+                                <h1>Classic jewellery collection</h1>
+                                <a href="" class="sliderB mainBtn">
+                                    Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="whyChooseUs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="item align-items-center">
+                    <div class="left mr-4">
+                        <i class="fas fa-truck first"></i>
+                        <i class="fas fa-truck second"></i>
+                    </div>
+                    <div class="right">
+                        <div class="heading">
+                            Free Delivery
+                        </div>
+                        <div class="content">
+                            Free shipping on all order
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2 py-3 m-md-0 py-md-0">
+                <div class="item align-items-center justify-content-md-center text-md-center">
+                    <div class="left mr-4">
+                        <i class="fas fa-money-bill-alt first"></i>
+                        <i class="fas fa-money-bill-alt second"></i>
+                    </div>
+                    <div class="right">
+                        <div class="heading">
+                            Money Return
+                        </div>
+                        <div class="content">
+                            Back guarantee in 7 days
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item align-items-center justify-content-md-end text-md-right">
+                    <div class="left mr-4">
+                        <i class="fas fa-percent first"></i>
+                        <i class="fas fa-percent second"></i>
+                    </div>
+                    <div class="right">
+                        <div class="heading w-100">
+                            Member Discount
+                        </div>
+                        <div class="content w-100">
+                            Onevery order over $130.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="trending">
+    <div class="container">
+        <div class="row heading">
+            <div class="col-12">
+                <h1>Ən çox satılan məhsullar</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="banner">
+                    <img src="img/product-bnr.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 products">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div class="image-wrapper mb-3">
+                                <div class="isNew">
+                                    New
+                                </div>
+                                <div class="discount">
+                                    -10%
+                                </div>
+                                <a href="">
+                                    <img src="img/p1.jpg" class="img-fluid" alt="">
+                                </a>
+                                <a href="" class="mainBtn">Daha ətraflı</a>
+                            </div>
+                            <div class="content">
+                                <a href="">
+                                    <h1>Tincidunt Ut Laoreet</h1>
+                                </a>
+                                <p class="price d-flex justify-content-between">
+                                    340AZN<span class="old-price">400AZN</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div class="image-wrapper mb-3">
+                                <div class="isNew">
+                                    New
+                                </div>
+                                <a href="">
+                                    <img src="img/p2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <a href="" class="mainBtn">Daha ətraflı</a>
+                            </div>
+                            <div class="content">
+                                <a href="">
+                                    <h1>Shrinking From Toil</h1>
+                                </a>
+                                <p class="price d-flex justify-content-between">
+                                    340AZN
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div class="image-wrapper mb-3">
+                                <a href="">
+                                    <img src="img/p3.jpg" class="img-fluid" alt="">
+                                </a>
+                                <a href="" class="mainBtn">Daha ətraflı</a>
+                            </div>
+                            <div class="content">
+                                <a href="">
+                                    <h1>Shrinking From Toil</h1>
+                                </a>
+                                <p class="price d-flex justify-content-between">
+                                    340AZN
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-4">
+                        <div class="item">
+                            <div class="image-wrapper mb-3">
+                                <div class="isNew">
+                                    New
+                                </div>
+                                <div class="discount">
+                                    -10%
+                                </div>
+                                <a href="">
+                                    <img src="img/p1.jpg" class="img-fluid" alt="">
+                                </a>
+                                <a href="" class="mainBtn">Daha ətraflı</a>
+                            </div>
+                            <div class="content">
+                                <a href="">
+                                    <h1>Tincidunt Ut Laoreet</h1>
+                                </a>
+                                <p class="price d-flex justify-content-between">
+                                    340AZN<span class="old-price">400AZN</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-4">
+                        <div class="item">
+                            <div class="image-wrapper mb-3">
+                                <div class="isNew">
+                                    New
+                                </div>
+                                <a href="">
+                                    <img src="img/p2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <a href="" class="mainBtn">Daha ətraflı</a>
+                            </div>
+                            <div class="content">
+                                <a href="">
+                                    <h1>Shrinking From Toil</h1>
+                                </a>
+                                <p class="price d-flex justify-content-between">
+                                    340AZN
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-4">
+                        <div class="item">
+                            <div class="image-wrapper mb-3">
+                                <a href="">
+                                    <img src="img/p3.jpg" class="img-fluid" alt="">
+                                </a>
+                                <a href="" class="mainBtn">Daha ətraflı</a>
+                            </div>
+                            <div class="content">
+                                <a href="">
+                                    <h1>Shrinking From Toil</h1>
+                                </a>
+                                <p class="price d-flex justify-content-between">
+                                    340AZN
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="popular-products">
+    <div class="container">
+        <div class="row heading">
+            <div class="col-12">
+                <h1>Seçilmiş məhsullar</h1>
+                <p>
+                    Əl işi ilə işləmiş üzüklər, sırğalar, qolbaqlar və boyunbağıların ən yeni kolleksiyalarından
+                    seçilmiş məhsullar.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-2 mb-md-5">
+            <div class="col-12 categories text-center">
+                <ul class="d-flex justify-content-center flex-wrap">
+                    <li>
+                        <a href="" data-id="ring" class="active">Üzüklər</a>
+                    </li>
+                    <li>
+                        <a href="" data-id="earrings">Sırğalar</a>
+                    </li>
+                    <li>
+                        <a href="" data-id="bracelet">Qolbaqlar</a>
+                    </li>
+                    <li>
+                        <a href="" data-id="necklace">Boyunbağılar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row content active m-0" data-id="ring">
+            <div class="col-md-6 left-side p-0">
+                <a href="">
+                    <img src="img/ring.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+            <div class="col-md-6 right-side d-flex align-items-center p-0">
+                <div class="info">
+                    <h1>Cartier Love Gold Ring</h1>
+                    <p>
+                        The DiamondShop Lovely Necklaces collection is a varied and vibrant selection of
+                        exceptionally designed pieces adorned with the brand’s renowned precision cut clear and
+                        color crystals. Our necklaces can be perfectly matched with a singular.
+                    </p>
+                    <a class="mainBtn" href="">Daha ətraflı</a>
+                </div>
+            </div>
+        </div>
+        <div class="row content m-0" style="display: none;" data-id="earrings">
+            <div class="col-lg-6 left-side p-0">
+                <a href="">
+                    <img src="img/ear.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+            <div class="col-lg-6 right-side d-flex align-items-center p-0">
+                <div class="info">
+                    <h1>Amulette de Cartier</h1>
+                    <p>
+                        The DiamondShop Lovely Necklaces collection is a varied and vibrant selection of
+                        exceptionally designed pieces adorned with the brand’s renowned precision cut clear and
+                        color crystals. Our necklaces can be perfectly matched with a singular.
+                    </p>
+                    <a class="mainBtn" href="">Daha ətraflı</a>
+                </div>
+            </div>
+        </div>
+        <div class="row content m-0" style="display: none;" data-id="bracelet">
+            <div class="col-lg-6 left-side p-0">
+                <a href="">
+                    <img src="img/ring.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+            <div class="col-lg-6 right-side d-flex align-items-center p-0">
+                <div class="info">
+                    <h1>Cartier Love Gold Ring</h1>
+                    <p>
+                        The DiamondShop Lovely Necklaces collection is a varied and vibrant selection of
+                        exceptionally designed pieces adorned with the brand’s renowned precision cut clear and
+                        color crystals. Our necklaces can be perfectly matched with a singular.
+                    </p>
+                    <a class="mainBtn" href="">Daha ətraflı</a>
+                </div>
+            </div>
+        </div>
+        <div class="row content m-0" style="display: none;" data-id="necklace">
+            <div class="col-lg-6 left-side p-0">
+                <a href="">
+                    <img src="img/neck.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+            <div class="col-lg-6 right-side d-flex align-items-center p-0">
+                <div class="info">
+                    <h1>Lovely Necklaces</h1>
+                    <p>
+                        The DiamondShop Lovely Necklaces collection is a varied and vibrant selection of
+                        exceptionally designed pieces adorned with the brand’s renowned precision cut clear and
+                        color crystals. Our necklaces can be perfectly matched with a singular.
+                    </p>
+                    <a class="mainBtn" href="">Daha ətraflı</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="clients">
+    <div class="container">
+        <div class="row heading">
+            <div class="col-12">
+                <h1>Müştəri rəyləri</h1>
+            </div>
+        </div>
+        <div class="row px-4 px-md-0">
+            <div class="col-12">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="image-wrapper">
+                            <img src="img/testimonials-2.jpg" alt="">
+                        </div>
+                        <div class="heading">
+                            Lenny Stevens
+                        </div>
+                        <div class="content">
+                            "DiamondShop helped me choose a perfect present for my girlfriend’s anniversary. Thank you!"
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-wrapper">
+                            <img src="img/testimonials-5.jpg" alt="">
+                        </div>
+                        <div class="heading">
+                            Lenny Stevens
+                        </div>
+                        <div class="content">
+                            "DiamondShop helped me choose a perfect present for my girlfriend’s anniversary. Thank you!"
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-wrapper">
+                            <img src="img/testimonials-3.jpg" alt="">
+                        </div>
+                        <div class="heading">
+                            Lenny Stevens
+                        </div>
+                        <div class="content">
+                            "DiamondShop helped me choose a perfect present for my girlfriend’s anniversary. Thank you!"
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-wrapper">
+                            <img src="img/testimonials-4.jpg" alt="">
+                        </div>
+                        <div class="heading">
+                            Lenny Stevens
+                        </div>
+                        <div class="content">
+                            "DiamondShop helped me choose a perfect present for my girlfriend’s anniversary. Thank you!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
