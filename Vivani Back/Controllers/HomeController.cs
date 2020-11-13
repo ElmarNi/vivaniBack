@@ -20,7 +20,9 @@ namespace VivaniBack.Controllers
         {
             HomeVm vm = new HomeVm
             {
-                homeSliders = _context.homeSliders
+                homeSliders = _context.homeSliders,
+                whyChooseUs = _context.whyChooseUs,
+                trendingProductsImage = _context.trendingProductsImage
             };
             return View(vm);
         }

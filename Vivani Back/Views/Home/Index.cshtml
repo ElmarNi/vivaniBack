@@ -6,7 +6,7 @@
                 <div class="owl-carousel">
                     @foreach (var item in Model.homeSliders)
                     {
-                        <div class="custom-item" style="background-image: url(@item.ImageUrl);">
+                        <div class="custom-item" style="background-image: url(../../img/@item.ImageUrl);">
                             <div class="content">
                                 <p>@item.LittleHeader</p>
                                 <h1>Classic jewellery collection</h1>
@@ -24,54 +24,25 @@
 <section id="whyChooseUs">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="item align-items-center">
-                    <div class="left mr-4">
-                        <i class="fas fa-truck first"></i>
-                        <i class="fas fa-truck second"></i>
-                    </div>
-                    <div class="right">
-                        <div class="heading">
-                            Free Delivery
+            @for (int i = 0; i < Model.whyChooseUs.Count(); i++)
+            {
+                <div class='col-md-4 @(i == 1? "my-2 py-3 m-md-0 py-md-0" : "")'>
+                    <div class="item align-items-center">
+                        <div class="left mr-4">
+                            <i class="@Model.whyChooseUs.ElementAt(i).Icon first"></i>
+                            <i class="@Model.whyChooseUs.ElementAt(i).Icon second"></i>
                         </div>
-                        <div class="content">
-                            Free shipping on all order
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-2 py-3 m-md-0 py-md-0">
-                <div class="item align-items-center justify-content-md-center text-md-center">
-                    <div class="left mr-4">
-                        <i class="fas fa-money-bill-alt first"></i>
-                        <i class="fas fa-money-bill-alt second"></i>
-                    </div>
-                    <div class="right">
-                        <div class="heading">
-                            Money Return
-                        </div>
-                        <div class="content">
-                            Back guarantee in 7 days
+                        <div class="right">
+                            <div class="heading">
+                                @Model.whyChooseUs.ElementAt(i).Heading
+                            </div>
+                            <div class="content">
+                                @Model.whyChooseUs.ElementAt(i).Content
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="item align-items-center justify-content-md-end text-md-right">
-                    <div class="left mr-4">
-                        <i class="fas fa-percent first"></i>
-                        <i class="fas fa-percent second"></i>
-                    </div>
-                    <div class="right">
-                        <div class="heading w-100">
-                            Member Discount
-                        </div>
-                        <div class="content w-100">
-                            Onevery order over $130.00
-                        </div>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </section>
@@ -85,7 +56,7 @@
         <div class="row">
             <div class="col-lg-4 d-none d-lg-block">
                 <div class="banner">
-                    <img src="img/product-bnr.jpg" alt="" class="img-fluid">
+                    <img src="~/img/@Model.trendingProductsImage.ElementAtOrDefault(0).ImageUrl" alt="" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-8 col-12 products">

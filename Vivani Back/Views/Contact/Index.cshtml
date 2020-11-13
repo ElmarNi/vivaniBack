@@ -1,4 +1,4 @@
-﻿
+﻿@model ContactVM
 <section id="breadcrumb">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
@@ -17,30 +17,30 @@
         <div class="row">
             <div class="col-lg-6 mb-5 mb-lg-0">
                 <div class="image-wrapper">
-                    <img src="img/contact.png" alt="">
+                    <img src="~/img/@Model.contact.FirstOrDefault().ImageUrl" alt="">
                 </div>
             </div>
             <div class="col-lg-6 align-self-center px-lg-5">
                 <div class="main-heading text-center text-lg-left">
-                    <h1>Əlaqədə qalın !</h1>
-                    <p>We'd Love to Hear From You, Lets Get In Touch!</p>
+                    <h1>@Model.contact.FirstOrDefault().MainHeader</h1>
+                    <p>@Model.contact.FirstOrDefault().SmallHeader</p>
                 </div>
                 <div class="row">
                     <div class="col-6 adress">
                         <h1>Ünvan</h1>
-                        <p>4005, Silver business point India</p>
+                        <p>@Model.contact.FirstOrDefault().Adress</p>
                     </div>
                     <div class="col-6 phone">
                         <h1>Əlaqə nömrəsi</h1>
-                        <a href="tel:">+994(50)-555-55-55</a>
+                        <a href="tel:">@Model.contact.FirstOrDefault().PhoneNumber</a>
                     </div>
                     <div class="col-6 email">
                         <h1>Email</h1>
-                        <a href="mailto:">office@jeweller.com</a>
+                        <a href="mailto:">@Model.contact.FirstOrDefault().Email</a>
                     </div>
                     <div class="col-6 hours">
                         <h1>İş saatları</h1>
-                        <p>Həftəiçi hər gün saat 09:00 - 18:00-a dək xidmətinizdəyik</p>
+                        <p>@Model.contact.FirstOrDefault().Hours</p>
                     </div>
                 </div>
             </div>
@@ -57,19 +57,24 @@
         <div class="row">
             <div class="col-12">
                 <h1>Bizə yazın</h1>
-                <form action="post">
+                <form method="POST">
                     <div class="row">
+                        <div asp-validation-summary="ModelOnly"></div>
                         <div class="col-md-4">
-                            <input name="name" type="text" placeholder="Ad, Soyad">
+                            <input asp-for="@Model.form.Fullname" placeholder="Ad, Soyad">
+                            <span asp-validation-for="@Model.form.Fullname" class="validation-span"></span>
                         </div>
                         <div class="col-md-4">
-                            <input name="email" type="email" placeholder="E-mail">
+                            <input asp-for="@Model.form.Email" placeholder="E-mail">
+                            <span asp-validation-for="@Model.form.Email" class="validation-span"></span>
                         </div>
                         <div class="col-md-4">
-                            <input name="number" type="text" placeholder="Nömrəniz">
+                            <input asp-for="@Model.form.PhoneNumber" placeholder="Nömrəniz">
+                            <span asp-validation-for="@Model.form.PhoneNumber" class="validation-span"></span>
                         </div>
                         <div class="col-12">
-                            <textarea name="message" id="" placeholder="Mesajınız" rows="7"></textarea>
+                            <textarea asp-for="@Model.form.Message" placeholder="Mesajınız" rows="7"></textarea>
+                            <span asp-validation-for="@Model.form.Message" class="validation-span"></span>
                         </div>
                         <div class="col-12 text-center text-md-right">
                             <input type="submit" value="Göndər" class="mainBtn">
@@ -80,3 +85,7 @@
         </div>
     </div>
 </section>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

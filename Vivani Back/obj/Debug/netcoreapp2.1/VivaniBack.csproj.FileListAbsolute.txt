@@ -32,3 +32,4 @@ C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack.csproj.CopyComplete
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ErrorPage.cshtml.g.cs

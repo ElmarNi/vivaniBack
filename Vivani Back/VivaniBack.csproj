@@ -10,6 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\ErrorPage\css\css.exe" />
+    <None Include="wwwroot\ErrorPage\ErrorPage.exe" />
+    <None Include="wwwroot\ErrorPage\img\img.exe" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\js\site.min.js" />
   </ItemGroup>
