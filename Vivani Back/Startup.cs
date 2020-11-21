@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using VivaniBack.DAL;
+using VivaniBack.Models;
 
 namespace VivaniBack
 {
@@ -31,14 +33,14 @@ namespace VivaniBack
             {
                 options.UseSqlServer(_configuration["ConnectionStrings:DefaultConnection"]);
             });
-            services.Configure<CookiePolicyOptions>(options =>
+            services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<VivaniDbContext>()
+                .AddDefaultTokenProviders();
+            services.Configure<IdentityOptions>(options =>
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredUniqueChars = 0;
             });
-
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -61,6 +63,10 @@ namespace VivaniBack
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                    name: "areas",
+                    template: "{area:exists}/{controller=Account}/{action=Index}/{id?}"
+                );
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

@@ -1,0 +1,28 @@
+﻿@model About
+<section id="breadcrumb">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <p>
+                    <a href="index.html">Ana səhifə</a>
+                    <i class="fas fa-angle-double-right"></i>
+                    Haqqımızda
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mt-3">
+                <div class="image-wrapper">
+                    <img src="~/img/@Model.ImageUrl" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-3 content align-self-center text-justify">
+                <p>@Model.Content</p>
+            </div>
+        </div>
+    </div>
+</section>

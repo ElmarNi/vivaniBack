@@ -185,7 +185,7 @@ WriteAttributeValue("", 1334, Model.whyChooseUs.ElementAt(i).Icon, 1334, 36, fal
                     ");
             EndContext();
             BeginContext(2244, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c5e5c43dec9f470aacfcbdc613fbdd23", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3c2aba4e67f144958366e78d24dab5ab", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

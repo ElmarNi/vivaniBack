@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
+    <None Include="Areas\admin\Views\Shared\_ValidationScriptsPartial.cshtml" />
     <None Include="wwwroot\ErrorPage\css\css.exe" />
     <None Include="wwwroot\ErrorPage\ErrorPage.exe" />
     <None Include="wwwroot\ErrorPage\img\img.exe" />
@@ -32,6 +35,11 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\admin\Data\" />
+    <Folder Include="Areas\admin\Models\" />
   </ItemGroup>
 
 </Project>
