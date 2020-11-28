@@ -10,13 +10,13 @@ namespace VivaniBack.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Başlıq boş olmamalıdır")]
         public string Heading { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Məzmun boş olmamalıdır")]
         public string Content { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "İkon boş olmamalıdır")]
         public string Icon { get; set; }
     }
 }

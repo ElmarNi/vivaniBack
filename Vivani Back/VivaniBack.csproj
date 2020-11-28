@@ -13,6 +13,18 @@
   <ItemGroup>
     <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
     <None Include="Areas\admin\Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="wwwroot\admin\img\undraw_posting_photo.svg" />
+    <None Include="wwwroot\admin\img\undraw_profile.svg" />
+    <None Include="wwwroot\admin\img\undraw_profile_1.svg" />
+    <None Include="wwwroot\admin\img\undraw_profile_2.svg" />
+    <None Include="wwwroot\admin\img\undraw_profile_3.svg" />
+    <None Include="wwwroot\admin\img\undraw_rocket.svg" />
+    <None Include="wwwroot\admin\js\demo\chart-area-demo.js" />
+    <None Include="wwwroot\admin\js\demo\chart-bar-demo.js" />
+    <None Include="wwwroot\admin\js\demo\chart-pie-demo.js" />
+    <None Include="wwwroot\admin\js\demo\datatables-demo.js" />
+    <None Include="wwwroot\admin\js\sb-admin-2.js" />
+    <None Include="wwwroot\admin\js\sb-admin-2.min.js" />
     <None Include="wwwroot\ErrorPage\css\css.exe" />
     <None Include="wwwroot\ErrorPage\ErrorPage.exe" />
     <None Include="wwwroot\ErrorPage\img\img.exe" />
@@ -21,6 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.3" />
@@ -40,6 +53,7 @@
   <ItemGroup>
     <Folder Include="Areas\admin\Data\" />
     <Folder Include="Areas\admin\Models\" />
+    <Folder Include="wwwroot\img\contactPhoto\" />
   </ItemGroup>
 
 </Project>

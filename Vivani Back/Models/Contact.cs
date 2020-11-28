@@ -17,23 +17,23 @@ namespace VivaniBack.Models
         [NotMapped]
         public IFormFile Image { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Əsas başlıq boş olmamalıdır")]
         public string MainHeader { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Kiçik başlıq boş olmamalıdır")]
         public string SmallHeader { get; set; }
 
 
-        [Required, EmailAddress, DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "Email boş olmamalıdır"), EmailAddress, DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [Required, DataType(DataType.PhoneNumber)]
+        [Required(ErrorMessage = "Əlaqə nömrəsi boş olmamalıdır"), DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Ünvan boş olmamalıdır")]
         public string Adress { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "İş saatları boş olmamalıdır")]
         public string Hours { get; set; }
     }
 }

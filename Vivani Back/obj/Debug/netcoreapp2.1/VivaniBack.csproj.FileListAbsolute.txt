@@ -30,7 +30,6 @@ C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack.pdb
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack.genruntimeconfig.cache
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack.csproj.CopyComplete
-C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ErrorPage.cshtml.g.cs
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Views\About\Index.cshtml.g.cs
@@ -40,3 +39,10 @@ C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Area
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\Account\ChangePassword.cshtml.g.cs
+C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\VivaniBack.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\Shared\PasswordChanged.cshtml.g.cs
+C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\WhyUs\Index.cshtml.g.cs
+C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\WhyUs\Update.cshtml.g.cs
+C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\Contact\Index.cshtml.g.cs
+C:\Users\User\Desktop\Vivani Back\Vivani Back\obj\Debug\netcoreapp2.1\Razor\Areas\admin\Views\Contact\Update.cshtml.g.cs

@@ -58,7 +58,7 @@ using VivaniBack.Models;
             WriteLiteral("<!doctype html>\n<html lang=\"en\">\n\n");
             EndContext();
             BeginContext(34, 991, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be18858f7fd4a03b8bc579b6526cdf5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1d99b0130504a31aa5365f409bb8ccf", async() => {
                 BeginContext(40, 978, true);
                 WriteLiteral(@"
     <!-- Required meta tags -->
@@ -102,7 +102,7 @@ using VivaniBack.Models;
             WriteLiteral("\n");
             EndContext();
             BeginContext(1026, 6858, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "505aa681bc8949219389d5518a6960d2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd8ae91adae84db9b466f9a8ebdc37d5", async() => {
                 BeginContext(1032, 467, true);
                 WriteLiteral(@"
     <header id=""large-screens"" class=""d-none d-md-block"">
@@ -126,7 +126,7 @@ WriteAttributeValue("", 1507, ViewContext.RouteData.Values["Controller"].ToStrin
                 WriteLiteral(">Ana səhifə</a></li>\n                        <li>");
                 EndContext();
                 BeginContext(1639, 151, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ceedc9616a84c13a61de20e95c0a2e2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "901529e6ce2944418ec435bb64ca436f", async() => {
                     BeginContext(1776, 10, true);
                     WriteLiteral("Haqqımızda");
                     EndContext();
@@ -157,7 +157,7 @@ AddHtmlAttributeValue("", 1691, ViewContext.RouteData.Values["Controller"].ToStr
                 WriteLiteral("</li>\n                        <li><a href=\"\">Məhsullar</a></li>\n                        <li>");
                 EndContext();
                 BeginContext(1882, 150, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0961be9cf7b7442091ad5a46b75120de", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8791ea29cf9e467bbe494b7c7b6ec99c", async() => {
                     BeginContext(2023, 5, true);
                     WriteLiteral("Əlaqə");
                     EndContext();
@@ -222,7 +222,7 @@ WriteAttributeValue("", 2867, ViewContext.RouteData.Values["Controller"].ToStrin
                 WriteLiteral(">Ana səhifə</a></li>\n                <li>");
                 EndContext();
                 BeginContext(2991, 151, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "becef03173be4fcab3bc8ea121a6e0f7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f9ae6464dca41a293151cfd08fd7ae9", async() => {
                     BeginContext(3128, 10, true);
                     WriteLiteral("Haqqımızda");
                     EndContext();
@@ -253,7 +253,7 @@ AddHtmlAttributeValue("", 3043, ViewContext.RouteData.Values["Controller"].ToStr
                 WriteLiteral("</li>\n                <li><a href=\"\">Məhsullar</a></li>\n                <li>");
                 EndContext();
                 BeginContext(3218, 150, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ddcd7185a33488f988748710d2f7036", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b9dcaa8258041c696c64043d107a20b", async() => {
                     BeginContext(3359, 5, true);
                     WriteLiteral("Əlaqə");
                     EndContext();
@@ -332,7 +332,7 @@ Write(RenderBody());
                                     <li>");
                 EndContext();
                 BeginContext(5195, 59, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41102fef57e543228cb1f00a82c6a411", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bdc5b3b10f244d568a73247dc4316af8", async() => {
                     BeginContext(5240, 10, true);
                     WriteLiteral("Haqqımızda");
                     EndContext();
@@ -356,7 +356,7 @@ Write(RenderBody());
                 WriteLiteral("</li>\n                                    <li><a href=\"\">Məhsullar</a></li>\n                                    <li>");
                 EndContext();
                 BeginContext(5370, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2209742a77dd431a98b0b7b79d538df5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cae51424761c493eb78c05f365f3a8f1", async() => {
                     BeginContext(5417, 5, true);
                     WriteLiteral("Əlaqə");
                     EndContext();

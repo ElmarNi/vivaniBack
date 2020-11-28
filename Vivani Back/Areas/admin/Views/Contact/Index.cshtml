@@ -1,0 +1,42 @@
+﻿@model Contact
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5">Əlaqə məlumatları</h1>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Əsas başlıq</th>
+                                <th scope="col">Kiçik başlıq</th>
+                                <th scope="col">Ünvan</th>
+                                <th scope="col">Əlaqə nömrəsi</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">İş saatları</th>
+                                <th scope="col">Şəkil</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">@Model.Id</th>
+                                <th>@Model.MainHeader</th>
+                                <th>@Model.SmallHeader</th>
+                                <td>@Model.Adress</td>
+                                <td>@Model.PhoneNumber</td>
+                                <td>@Model.Email</td>
+                                <td>@Model.Hours</td>
+                                <td><img src="~/img/@Model.ImageUrl" width="120" /></td>
+                                <td>
+                                    <a class="btn btn-warning" asp-action="update" asp-route-id="@Model.Id">Yenilə</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -11,7 +11,11 @@ namespace VivaniBack.Areas.admin.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+            {
+                return View();
+            }
+            return Redirect("/admin/account");
         }
     }
 }

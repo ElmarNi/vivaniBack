@@ -25,12 +25,12 @@
         <form class="row h-100 justify-content-center align-content-center" method="post">
             <div asp-validation-summary="ModelOnly" class="col-12 text-danger"></div>
             <div class="col-12 col-md-7">
-                <label asp-for="@Model.Username"></label>
+                <label>İstifadəçi adı</label>
                 <input asp-for="@Model.Username" class="w-100 d-block"/>
                 <span asp-validation-for="@Model.Username"></span>
             </div>
             <div class="col-12 col-md-7 my-4">
-                <label asp-for="@Model.Password"></label>
+                <label>Şifrə</label>
                 <input asp-for="@Model.Password" class="w-100 d-block" />
                 <span asp-validation-for="@Model.Password"></span>
             </div>

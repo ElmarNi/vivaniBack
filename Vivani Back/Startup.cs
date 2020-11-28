@@ -56,7 +56,7 @@ namespace VivaniBack
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -65,7 +65,7 @@ namespace VivaniBack
             {
                 routes.MapRoute(
                     name: "areas",
-                    template: "{area:exists}/{controller=Account}/{action=Index}/{id?}"
+                    template: "{area:exists}/{controller=dashboard}/{action=Index}/{id?}"
                 );
                 routes.MapRoute(
                     name: "default",

@@ -1,0 +1,37 @@
+﻿@model WhyChooseUsAdminVm
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5">Niyə bizi seçməlisiniz?</h1>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Başlıq</th>
+                                <th scope="col">Məzmun</th>
+                                <th scope="col">İkon</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.WhyChooseUs)
+                            {
+                                <tr>
+                                    <th scope="row">@item.Id</th>
+                                    <td>@item.Heading</td>
+                                    <td>@item.Content</td>
+                                    <td><i class="@item.Icon"></i></td>
+                                    <td>
+                                        <a class="btn btn-warning" asp-action="update" asp-route-id="@item.Id">Yenilə</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

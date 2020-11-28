@@ -8,10 +8,10 @@ namespace VivaniBack.Models
 {
     public class LoginVm
     {
-        [Required]
+        [Required(ErrorMessage ="Istifadəçi adı boş olmamalıdır")]
         public string Username { get; set; }
 
-        [Required, DataType(DataType.Password)]
+        [Required(ErrorMessage ="Şifrə boş olmamalıdır"), DataType(DataType.Password)]
         public string Password { get; set; }
     }
 }
