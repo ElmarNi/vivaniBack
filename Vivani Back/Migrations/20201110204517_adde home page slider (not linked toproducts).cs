@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace VivaniBack.Migrations
 {
-    public partial class addehomepageslidernotlinkedtoproducts : Migration
+    public partial class addeHomepageslidernotlinkedtoproducts : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

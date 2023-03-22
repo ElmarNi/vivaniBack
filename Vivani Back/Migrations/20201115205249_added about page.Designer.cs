@@ -11,7 +11,7 @@ namespace VivaniBack.Migrations
 {
     [DbContext(typeof(VivaniDbContext))]
     [Migration("20201115205249_added about page")]
-    partial class addedaboutpage
+    partial class addedAboutpage
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

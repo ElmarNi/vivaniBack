@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace VivaniBack.Migrations
 {
-    public partial class addedaboutpage : Migration
+    public partial class addedAboutpage : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

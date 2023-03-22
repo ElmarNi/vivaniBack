@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace VivaniBack.Migrations
 {
-    public partial class addedcontactform : Migration
+    public partial class addedContactform : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

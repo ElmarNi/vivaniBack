@@ -10,7 +10,7 @@ namespace VivaniBack.Migrations
 {
     [DbContext(typeof(VivaniDbContext))]
     [Migration("20201110204517_adde home page slider (not linked toproducts)")]
-    partial class addehomepageslidernotlinkedtoproducts
+    partial class addeHomepageslidernotlinkedtoproducts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

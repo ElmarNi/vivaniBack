@@ -14,8 +14,8 @@ namespace VivaniBack.Areas.admin.Controllers
     public class ContactController : Controller
     {
         private readonly VivaniDbContext _context;
-        private readonly IHostingEnvironment _env;
-        public ContactController(VivaniDbContext context, IHostingEnvironment env)
+        private readonly IWebHostEnvironment _env;
+        public ContactController(VivaniDbContext context, IWebHostEnvironment env)
         {
             _context = context;
             _env = env;

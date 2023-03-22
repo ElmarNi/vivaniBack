@@ -11,7 +11,7 @@ namespace VivaniBack.Migrations
 {
     [DbContext(typeof(VivaniDbContext))]
     [Migration("20201115211517_added identity")]
-    partial class addedidentity
+    partial class addedIdentity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -1,0 +1,349 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ErrorPage/ErrorPage.exe",
+      "PackagePath": "staticwebassets/ErrorPage/ErrorPage.exe"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ErrorPage/css/css.exe",
+      "PackagePath": "staticwebassets/ErrorPage/css/css.exe"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ErrorPage/css/desktop.ini",
+      "PackagePath": "staticwebassets/ErrorPage/css/desktop.ini"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ErrorPage/css/style.css",
+      "PackagePath": "staticwebassets/ErrorPage/css/style.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ErrorPage/desktop.ini",
+      "PackagePath": "staticwebassets/ErrorPage/desktop.ini"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ErrorPage/img/bg.jpg",
+      "PackagePath": "staticwebassets/ErrorPage/img/bg.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ErrorPage/img/desktop.ini",
+      "PackagePath": "staticwebassets/ErrorPage/img/desktop.ini"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ErrorPage/img/img.exe",
+      "PackagePath": "staticwebassets/ErrorPage/img/img.exe"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/css/sb-admin-2.css",
+      "PackagePath": "staticwebassets/admin/css/sb-admin-2.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/css/sb-admin-2.min.css",
+      "PackagePath": "staticwebassets/admin/css/sb-admin-2.min.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/img/undraw_posting_photo.svg",
+      "PackagePath": "staticwebassets/admin/img/undraw_posting_photo.svg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/img/undraw_profile.svg",
+      "PackagePath": "staticwebassets/admin/img/undraw_profile.svg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/img/undraw_profile_1.svg",
+      "PackagePath": "staticwebassets/admin/img/undraw_profile_1.svg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/img/undraw_profile_2.svg",
+      "PackagePath": "staticwebassets/admin/img/undraw_profile_2.svg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/img/undraw_profile_3.svg",
+      "PackagePath": "staticwebassets/admin/img/undraw_profile_3.svg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/img/undraw_rocket.svg",
+      "PackagePath": "staticwebassets/admin/img/undraw_rocket.svg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/demo/chart-area-demo.js",
+      "PackagePath": "staticwebassets/admin/js/demo/chart-area-demo.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/demo/chart-bar-demo.js",
+      "PackagePath": "staticwebassets/admin/js/demo/chart-bar-demo.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/demo/chart-pie-demo.js",
+      "PackagePath": "staticwebassets/admin/js/demo/chart-pie-demo.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/demo/datatables-demo.js",
+      "PackagePath": "staticwebassets/admin/js/demo/datatables-demo.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/sb-admin-2.js",
+      "PackagePath": "staticwebassets/admin/js/sb-admin-2.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/sb-admin-2.min.js",
+      "PackagePath": "staticwebassets/admin/js/sb-admin-2.min.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/About-Us-1.png",
+      "PackagePath": "staticwebassets/img/About-Us-1.png"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/breadcurmb-img.png",
+      "PackagePath": "staticwebassets/img/breadcurmb-img.png"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/contactPhoto/e5b4b6c1-1bb4-476d-a409-6a2790d1c8cacontact.png",
+      "PackagePath": "staticwebassets/img/contactPhoto/e5b4b6c1-1bb4-476d-a409-6a2790d1c8cacontact.png"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/ear.jpg",
+      "PackagePath": "staticwebassets/img/ear.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/footer_bg.png",
+      "PackagePath": "staticwebassets/img/footer_bg.png"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/logo.png",
+      "PackagePath": "staticwebassets/img/logo.png"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/manat.png",
+      "PackagePath": "staticwebassets/img/manat.png"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/neck.jpg",
+      "PackagePath": "staticwebassets/img/neck.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/p1.jpg",
+      "PackagePath": "staticwebassets/img/p1.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/p2.jpg",
+      "PackagePath": "staticwebassets/img/p2.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/p3.jpg",
+      "PackagePath": "staticwebassets/img/p3.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/product-bnr.jpg",
+      "PackagePath": "staticwebassets/img/product-bnr.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/ring.jpg",
+      "PackagePath": "staticwebassets/img/ring.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider1.jpg",
+      "PackagePath": "staticwebassets/img/slider1.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider2.jpg",
+      "PackagePath": "staticwebassets/img/slider2.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/testimonials-2.jpg",
+      "PackagePath": "staticwebassets/img/testimonials-2.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/testimonials-3.jpg",
+      "PackagePath": "staticwebassets/img/testimonials-3.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/testimonials-4.jpg",
+      "PackagePath": "staticwebassets/img/testimonials-4.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/testimonials-5.jpg",
+      "PackagePath": "staticwebassets/img/testimonials-5.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/js/site.min.js",
+      "PackagePath": "staticwebassets/js/site.min.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/.bower.json",
+      "PackagePath": "staticwebassets/lib/bootstrap/.bower.json"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-theme.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-theme.css.map"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-theme.min.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/dist/js/npm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/npm.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation-unobtrusive/.bower.json",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/.bower.json"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation/.bower.json",
+      "PackagePath": "staticwebassets/lib/jquery-validation/.bower.json"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery/.bower.json",
+      "PackagePath": "staticwebassets/lib/jquery/.bower.json"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/owlCarousel/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/owlCarousel/owl.carousel.min.css"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/owlCarousel/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/owlCarousel/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/owlCarousel/owl.theme.default.min.css",
+      "PackagePath": "staticwebassets/owlCarousel/owl.theme.default.min.css"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.VivaniBack.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.VivaniBack.props",
+      "PackagePath": "build\\VivaniBack.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.VivaniBack.props",
+      "PackagePath": "buildMultiTargeting\\VivaniBack.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.VivaniBack.props",
+      "PackagePath": "buildTransitive\\VivaniBack.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

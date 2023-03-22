@@ -10,7 +10,7 @@ namespace VivaniBack.Migrations
 {
     [DbContext(typeof(VivaniDbContext))]
     [Migration("20201112101226_added contact form")]
-    partial class addedcontactform
+    partial class addedContactform
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

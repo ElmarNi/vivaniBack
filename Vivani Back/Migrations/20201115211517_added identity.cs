@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace VivaniBack.Migrations
 {
-    public partial class addedidentity : Migration
+    public partial class addedIdentity : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
