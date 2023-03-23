@@ -51,13 +51,17 @@ app.UseCookiePolicy();
 app.UseCors();
 
 app.MapControllerRoute(
+    name: "admin",
+    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.MapAreaControllerRoute(
-    name: "admin",
-    areaName: "admin",
-    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
-);
+// app.MapAreaControllerRoute(
+//     name: "admin",
+//     areaName: "admin",
+//     pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+// );
 
 app.Run();
