@@ -28,8 +28,6 @@
     <None Include="wwwroot\ErrorPage\css\css.exe" />
     <None Include="wwwroot\ErrorPage\ErrorPage.exe" />
     <None Include="wwwroot\ErrorPage\img\img.exe" />
-    <None Include="wwwroot\js\site.js" />
-    <None Include="wwwroot\js\site.min.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,11 +38,22 @@
     <Folder Include="Areas\admin\Data\" />
     <Folder Include="Areas\admin\Models\" />
     <Folder Include="wwwroot\img\contactPhoto\" />
+    <Folder Include="wwwroot\img\whyChooseUs\" />
+    <Folder Include="wwwroot\lib\jquery\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\img\whyChooseUs\" />
+    <Content Remove="wwwroot\lib\jquery\" />
   </ItemGroup>
 </Project>

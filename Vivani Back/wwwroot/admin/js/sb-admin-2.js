@@ -52,5 +52,20 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
+    function change_img(input, image) {
+        $(input).change(function () {
+            let input = this;
+            let url = $(this).val();
+            let ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+            if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+                var reader = new FileReader();
 
+                reader.onload = function (e) {
+                    $(image).attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        })
+    }
+    change_img("#whyChooseUsAdmin #IconImage", "#whyChooseUsAdmin .newImage img");
 })(jQuery); // End of use strict

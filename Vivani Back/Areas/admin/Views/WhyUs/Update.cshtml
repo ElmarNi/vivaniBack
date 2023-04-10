@@ -1,28 +1,37 @@
 ﻿@model WhyChooseUs
 <style>
-    form span{
+    form span {
         font-size: 14px;
         color: red;
     }
 </style>
-<section>
+<section id="whyChooseUsAdmin">
     <div class="container">
-        <form method="post" class="row">
+        <form method="post" class="row" enctype="multipart/form-data">
+            <div class="col-6 oldImage mb-3">
+                <p style="margin: 0">Köhnə ikon</p>
+                <img width="64" src="/img/@Model.IconUrl" />
+            </div>
+
+            <div class="col-6 newImage mb-3">
+                <p style="margin: 0">Yeni ikon</p>
+                <img width="64" src="" />
+            </div>
+
             <div class="col-12" asp-validation-summary="ModelOnly"></div>
-            <div class="col-md-4">
+            <div class="col-6">
                 <label>Başlıq</label>
-                <input asp-for="@Model.Heading" class="w-100" />
-                <span asp-validation-for="@Model.Heading"></span>
+                <input asp-for="Heading" class="w-100" />
+                <span asp-validation-for="Heading"></span>
             </div>
-            <div class="col-md-4">
-                <label>Məzmun</label>
-                <input asp-for="@Model.Content" class="w-100" />
-                <span asp-validation-for="@Model.Content"></span>
-            </div>
-            <div class="col-md-4">
+            <div class="col-6">
                 <label>İkon</label>
-                <input asp-for="@Model.Icon" class="w-100" />
-                <span asp-validation-for="@Model.Icon"></span>
+                <input asp-for="IconImage" class="w-100" />
+                <span asp-validation-for="IconImage"></span>
+            </div>
+            <div class="col-12 mt-3">
+                <span asp-validation-for="Content" class="validation-span"></span>
+                <textarea asp-for="Content" id="editor"></textarea>
             </div>
             <div class="col-12 mt-4">
                 <input type="submit" value="Yadda saxla" class="btn btn bg-success text-white" />
@@ -30,6 +39,9 @@
         </form>
     </div>
 </section>
+
 @section Scripts{
+    <script src="~/ckeditor_4.16.0_full/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("editor")</script>
     <partial name="_ValidationScriptsPartial" />
 }

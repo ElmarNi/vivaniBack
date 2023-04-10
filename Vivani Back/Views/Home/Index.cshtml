@@ -9,7 +9,7 @@
                         <div class="custom-item" style="background-image: url(../../img/@item.ImageUrl);">
                             <div class="content">
                                 <p>@item.LittleHeader</p>
-                                <h1>Classic jewellery collection</h1>
+                                <h1>@item.LargeHeader</h1>
                                 <a href="" class="sliderB mainBtn">
                                     Shop Now
                                 </a>
@@ -21,6 +21,7 @@
         </div>
     </div>
 </section>
+
 <section id="whyChooseUs" style="padding: 20px 0">
     <div class="container">
         <div class="row">
@@ -29,15 +30,15 @@
                 <div class='col-md-4 @(i == 1? "my-2 py-3 m-md-0 py-md-0" : "")'>
                     <div class="item align-items-center">
                         <div class="left mr-4">
-                            <i class="@Model.whyChooseUs.ElementAt(i).Icon first"></i>
-                            <i class="@Model.whyChooseUs.ElementAt(i).Icon second"></i>
+                            <img src="img/@Model.whyChooseUs.ElementAtOrDefault(i).IconUrl" />
+                            <img src="img/@Model.whyChooseUs.ElementAtOrDefault(i).IconUrl" />
                         </div>
                         <div class="right">
                             <div class="heading">
-                                @Model.whyChooseUs.ElementAt(i).Heading
+                                @Html.Raw(Model.whyChooseUs.ElementAt(i).Heading)
                             </div>
                             <div class="content">
-                                @Model.whyChooseUs.ElementAt(i).Content
+                                @Html.Raw(Model.whyChooseUs.ElementAt(i).Content)
                             </div>
                         </div>
                     </div>
@@ -46,6 +47,7 @@
         </div>
     </div>
 </section>
+
 <section id="trending">
     <div class="container">
         <div class="row heading">
@@ -56,7 +58,7 @@
         <div class="row">
             <div class="col-lg-4 d-none d-lg-block">
                 <div class="banner">
-                    <img src="~/img/@Model.trendingProductsImage.ElementAtOrDefault(0).ImageUrl" alt="" class="img-fluid">
+                    <img src="img/product-bnr.jpg" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-8 col-12 products">
@@ -192,6 +194,7 @@
         </div>
     </div>
 </section>
+
 <section id="popular-products">
     <div class="container">
         <div class="row heading">
@@ -295,6 +298,7 @@
         </div>
     </div>
 </section>
+
 <section id="clients">
     <div class="container">
         <div class="row heading">

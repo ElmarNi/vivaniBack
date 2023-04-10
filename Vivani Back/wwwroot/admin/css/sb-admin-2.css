@@ -10679,7 +10679,8 @@ a:focus {
 }
 
 .sidebar-dark .nav-item.active .nav-link i {
-  color: #fff;
+    color: #fff;
+    width: 15px;
 }
 
 .sidebar-dark #sidebarToggle {

@@ -15,6 +15,10 @@ namespace VivaniBack.Models
 
         [Required]
         public string LittleHeader { get; set; }
+
+        [Required]
+        public string LargeHeader { get; set; }
+
         [NotMapped]
         public IFormFile Image { get; set; }
     }
