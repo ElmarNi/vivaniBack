@@ -68,4 +68,5 @@
         })
     }
     change_img("#whyChooseUsAdmin #IconImage", "#whyChooseUsAdmin .newImage img");
+    change_img("#adminAbout #Image", "#adminAbout .newImage img");
 })(jQuery); // End of use strict

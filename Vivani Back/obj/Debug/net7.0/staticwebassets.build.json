@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aaedlzbbFvC+RzlZfTEUEg5GixRj7UeGXizgdmBZ7BA=",
+  "Hash": "7cO16BhKw6gFytscOmh5WJERUh8w7ufg39zHfpt0JQE=",
   "Source": "VivaniBack",
   "BasePath": "_content/VivaniBack",
   "Mode": "Default",
@@ -9452,12 +9452,12 @@
       "OriginalItemSpec": "wwwroot/img/.DS_Store"
     },
     {
-      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/About-Us-1.png",
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/about/0c030cb1-b8b2-4b46-9add-de8f0ac734fa5128557.jpg",
       "SourceId": "VivaniBack",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
       "BasePath": "_content/VivaniBack",
-      "RelativePath": "img/About-Us-1.png",
+      "RelativePath": "img/about/0c030cb1-b8b2-4b46-9add-de8f0ac734fa5128557.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -9466,7 +9466,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/About-Us-1.png"
+      "OriginalItemSpec": "wwwroot/img/about/0c030cb1-b8b2-4b46-9add-de8f0ac734fa5128557.jpg"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/breadcurmb-img.png",

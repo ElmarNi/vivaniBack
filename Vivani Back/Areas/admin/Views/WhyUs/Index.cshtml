@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<WhyChooseUs>
+
 <section>
     <div class="container">
         <div class="row">
@@ -21,7 +22,7 @@
                                 <tr>
                                     <th scope="row">@item.Id</th>
                                     <td>@item.Heading</td>
-                                    <td>@item.Content</td>
+                                    <td>@Html.Raw(item.Content)</td>
                                     <td><img width="64" src="/img/@item.IconUrl" /></td>
                                     <td>
                                         <a class="btn btn-warning" asp-action="update" asp-route-id="@item.Id">Yenilə</a>

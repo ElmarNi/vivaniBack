@@ -68,7 +68,7 @@ namespace VivaniBack.Areas.admin.Controllers
                     if (!whyChooseUs.IconImage.ContentType.Contains("image/"))
                     {
                         ModelState.AddModelError("IconImage", "Şəklin formatı düzgün deyil");
-                        return View(whyChooseUs);
+                        return View(fromDb);
                     }
                     RemovePhoto(_env.WebRootPath, fromDb.IconUrl);
                     fromDb.IconUrl = await whyChooseUs.IconImage.SavePhotoAsync(_env.WebRootPath, "whyChooseUs");

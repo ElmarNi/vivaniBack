@@ -1,0 +1,47 @@
+﻿@model About
+<style>
+    form span {
+        font-size: 14px;
+        color: red;
+    }
+</style>
+<section id="adminAbout">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-success text-center">
+                <h3>@ViewBag.Success</h3>
+            </div>
+        </div>
+        <form method="post" class="row w-100" enctype="multipart/form-data">
+            <div class="col-6 oldImage mb-3">
+                <p style="margin: 0">Köhnə şəkil</p>
+                <img class="img-fluid" src="/img/@Model.ImageUrl" />
+            </div>
+
+            <div class="col-6 newImage mb-3">
+                <p style="margin: 0">Yeni şəkil</p>
+                <img class="img-fluid" src="" />
+            </div>
+            <div class="col-12" asp-validation-summary="ModelOnly"></div>
+            <div class="col-12 mb-3">
+                <label>Şəkil</label>
+                <input asp-for="Image" class="w-100"/>
+                <span asp-validation-for="Image" class="validation-span"></span>
+            </div>
+            <div class="col-12 mb-3">
+                <label>Kontent</label>
+                <textarea asp-for="Content" id="editor"></textarea>
+                <span asp-validation-for="Content" class="validation-span"></span>
+            </div>
+            <div class="col-12">
+                <input type="submit" value="Yadda saxla" class="btn btn bg-success text-white" />
+            </div>
+        </form>
+    </div>
+
+</section>
+@section Scripts{
+    <script src="~/ckeditor_4.16.0_full/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("editor")</script>
+    <partial name="_ValidationScriptsPartial" />
+}

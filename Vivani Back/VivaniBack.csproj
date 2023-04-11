@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Areas\admin\Views\About\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
     <None Include="Areas\admin\Views\Shared\_ValidationScriptsPartial.cshtml" />
     <None Include="wwwroot\admin\img\undraw_posting_photo.svg" />
@@ -40,6 +43,8 @@
     <Folder Include="wwwroot\img\contactPhoto\" />
     <Folder Include="wwwroot\img\whyChooseUs\" />
     <Folder Include="wwwroot\lib\jquery\" />
+    <Folder Include="wwwroot\img\about\" />
+    <Folder Include="Areas\admin\Views\About\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,5 +60,6 @@
   <ItemGroup>
     <Content Remove="wwwroot\img\whyChooseUs\" />
     <Content Remove="wwwroot\lib\jquery\" />
+    <Content Remove="wwwroot\img\about\" />
   </ItemGroup>
 </Project>

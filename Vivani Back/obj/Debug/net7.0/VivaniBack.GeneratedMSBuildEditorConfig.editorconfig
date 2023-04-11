@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/Areas/admin/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvYWRtaW4vVmlld3MvQWJvdXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/Areas/admin/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvYWRtaW4vVmlld3MvQWNjb3VudC9DaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
