@@ -1,0 +1,200 @@
+﻿<section id="breadcrumb">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <p>
+                    <a asp-controller="Home" asp-action="Index">Ana səhifə</a>
+                    <i class="fas fa-angle-double-right"></i>
+                    Məhsullar
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 custom-shadow">
+                <div class="left-side pt-4">
+                    <h1>Kateqoriya</h1>
+                    <ul>
+                        <li>
+                            <label>
+                                Uzukler
+                                <input type="checkbox" />
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Sirgalar
+                                <input type="checkbox" />
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Boyunbaglar
+                                <input type="checkbox" />
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Destler
+                                <input type="checkbox" />
+                            </label>
+                        </li>
+                    </ul>
+                    <h1 class="mt-4">Qiymet</h1>
+                    <div class="range_container mt-3">
+                        <div class="sliders_control">
+                            <input id="fromSlider" type="range" value="0" min="0" max="1000" />
+                            <input id="toSlider" type="range" value="1000" min="0" max="1000" />
+                        </div>
+                        <div class="form_control mt-3">
+                            <div class="form_control_container">
+                                <div class="form_control_container__time"><span>Min</span></div>
+                                <input class="form_control_container__time__input" type="number" id="fromInput" value="0" min="0" max="1000" />
+                            </div>
+                            <div class="form_control_container">
+                                <div class="form_control_container__time"><span>Max</span></div>
+                                <input class="form_control_container__time__input" type="number" id="toInput" value="1000" min="0" max="1000" />
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="mainBtn search">Axtar</a>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="right-side">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
+                            <div class="item">
+                                <div class="image-wrapper mb-3">
+                                    <div class="isNew">
+                                        New
+                                    </div>
+                                    <div class="discount">
+                                        -10%
+                                    </div>
+                                    <a href="">
+                                        <img src="img/p1.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="" class="mainBtn">Daha ətraflı</a>
+                                </div>
+                                <div class="content">
+                                    <a href="">
+                                        <h1>Tincidunt Ut Laoreet</h1>
+                                    </a>
+                                    <p class="price d-flex justify-content-between">
+                                        340AZN<span class="old-price">400AZN</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
+                            <div class="item">
+                                <div class="image-wrapper mb-3">
+                                    <div class="isNew">
+                                        New
+                                    </div>
+                                    <a href="">
+                                        <img src="img/p2.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="" class="mainBtn">Daha ətraflı</a>
+                                </div>
+                                <div class="content">
+                                    <a href="">
+                                        <h1>Shrinking From Toil</h1>
+                                    </a>
+                                    <p class="price d-flex justify-content-between">
+                                        340AZN
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
+                            <div class="item">
+                                <div class="image-wrapper mb-3">
+                                    <a href="">
+                                        <img src="img/p3.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="" class="mainBtn">Daha ətraflı</a>
+                                </div>
+                                <div class="content">
+                                    <a href="">
+                                        <h1>Shrinking From Toil</h1>
+                                    </a>
+                                    <p class="price d-flex justify-content-between">
+                                        340AZN
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mt-4">
+                            <div class="item">
+                                <div class="image-wrapper mb-3">
+                                    <div class="isNew">
+                                        New
+                                    </div>
+                                    <div class="discount">
+                                        -10%
+                                    </div>
+                                    <a href="">
+                                        <img src="img/p1.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="" class="mainBtn">Daha ətraflı</a>
+                                </div>
+                                <div class="content">
+                                    <a href="">
+                                        <h1>Tincidunt Ut Laoreet</h1>
+                                    </a>
+                                    <p class="price d-flex justify-content-between">
+                                        340AZN<span class="old-price">400AZN</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mt-4">
+                            <div class="item">
+                                <div class="image-wrapper mb-3">
+                                    <div class="isNew">
+                                        New
+                                    </div>
+                                    <a href="">
+                                        <img src="img/p2.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="" class="mainBtn">Daha ətraflı</a>
+                                </div>
+                                <div class="content">
+                                    <a href="">
+                                        <h1>Shrinking From Toil</h1>
+                                    </a>
+                                    <p class="price d-flex justify-content-between">
+                                        340AZN
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mt-4">
+                            <div class="item">
+                                <div class="image-wrapper mb-3">
+                                    <a href="">
+                                        <img src="img/p3.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="" class="mainBtn">Daha ətraflı</a>
+                                </div>
+                                <div class="content">
+                                    <a href="">
+                                        <h1>Shrinking From Toil</h1>
+                                    </a>
+                                    <p class="price d-flex justify-content-between">
+                                        340AZN
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -13,6 +13,7 @@
   <ItemGroup>
     <None Remove="Areas\admin\Views\About\" />
     <None Remove="Areas\admin\Views\ContactMessages\" />
+    <None Remove="Views\Products\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
@@ -46,6 +47,7 @@
     <Folder Include="wwwroot\img\about\" />
     <Folder Include="Areas\admin\Views\About\" />
     <Folder Include="Areas\admin\Views\ContactMessages\" />
+    <Folder Include="Views\Products\" />
   </ItemGroup>
 
   <ItemGroup>

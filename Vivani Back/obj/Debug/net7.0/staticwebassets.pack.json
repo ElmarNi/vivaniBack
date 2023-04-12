@@ -2325,6 +2325,10 @@
       "PackagePath": "staticwebassets/js/main.js"
     },
     {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/.DS_Store",
+      "PackagePath": "staticwebassets/lib/.DS_Store"
+    },
+    {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/bootstrap.min.css"
     },

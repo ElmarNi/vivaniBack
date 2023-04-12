@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aadXVgih21ZGAUGjSbRlFR9Yf+gvj5N2G3UBeaWKN6M=",
+  "Hash": "qhPvggRRC8dNqiB82BRO6XnDTBDgAaS/O4w5yvV1ckE=",
   "Source": "VivaniBack",
   "BasePath": "_content/VivaniBack",
   "Mode": "Default",
@@ -9892,6 +9892,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/main.js"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/.DS_Store",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "lib/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/.DS_Store"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/lib/bootstrap/bootstrap.min.css",

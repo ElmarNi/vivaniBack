@@ -19,7 +19,6 @@
     <!-- TT Firs font -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,600&display=swap"
           rel="stylesheet">
-
     <!-- Mine css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -36,7 +35,7 @@
                     <ul class="d-flex justify-content-end h-100 w-100 align-items-center">
                         <li><a href="/" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Home" ? "active" : "")">Ana səhifə</a></li>
                         <li><a asp-controller="About" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "About" ? "active" : "")">Haqqımızda</a></li>
-                        <li><a href="">Məhsullar</a></li>
+                        <li><a asp-controller="Products" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Products" ? "active" : "")">Məhsullar</a></li>
                         <li><a asp-controller="Contact" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Contact" ? "active" : "")">Əlaqə</a></li>
                     </ul>
                 </div>
@@ -63,7 +62,7 @@
             <ul class="menu">
                 <li><a href="/" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Home" ? "active" : "")">Ana səhifə</a></li>
                 <li><a asp-controller="About" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "About" ? "active" : "")">Haqqımızda</a></li>
-                <li><a href="">Məhsullar</a></li>
+                <li><a asp-controller="Products" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Products" ? "active" : "")>Məhsullar</a></li>
                 <li><a asp-controller="Contact" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Contact" ? "active" : "")">Əlaqə</a></li>
             </ul>
         </nav>
@@ -106,7 +105,7 @@
                                 <ul>
                                     <li><a href="/">Ana səhifə</a></li>
                                     <li><a asp-controller="About" asp-action="Index">Haqqımızda</a></li>
-                                    <li><a href="">Məhsullar</a></li>
+                                    <li><a asp-controller="Products" asp-action="Index">Məhsullar</a></li>
                                     <li><a asp-controller="Contact" asp-action="Index">Əlaqə</a></li>
                                 </ul>
                             </div>
