@@ -1,0 +1,94 @@
+﻿@model IEnumerable<ContactForm>
+
+<section id="contactMessagesAdmin">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5">Əlaqə mesajları</h1>
+                <div class="col-12 text-center">
+                    <h3 class="textSuccess"></h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Tam ad</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Nömrə</th>
+                                <th scope="col">Mesaj</th>
+                                <th scope="col">Tarix</th>
+                                <th scope="col">Cavablanıb?</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">@item.Id</th>
+                                    <td>@item.Fullname</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.PhoneNumber</td>
+                                    <td data-message="@item.Message">@(item.Message.Length > 10 ? item.Message.Substring(0, 10) + "..." : item.Message)</td>
+                                    <td>@item.Date</td>
+                                    <td>@(item.IsResponsed ? "HƏ" : "YOX")</td>
+                                    <td>
+                                        <a style="width: 114px" href="#" class="btn btn-warning updateStatus" data-id="@item.Id">Status dəyiş</a>
+                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#fullMessageInfo" data-id="@item.Id">Ətraflı</button>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade " id="fullMessageInfo" tabindex="-1" aria-labelledby="fullMessageInfo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3 class="textSuccess"></h3>
+                    </div>
+                    <div class="col-4">
+                        <label>Tam ad</label>
+                        <p class="name"></p>
+                    </div>
+                    <div class="col-4">
+                        <label>Email</label>
+                        <p class="email"></p>
+                    </div>
+                    <div class="col-4">
+                        <label>Nömrə</label>
+                        <p class="phoneNumber"></p>
+                    </div>
+                    <div class="col-4">
+                        <label>Tarix</label>
+                        <p class="date"></p>
+                    </div>
+                    <div class="col-4">
+                        <label>Cavablanıb</label>
+                        <p class="isResponsed"></p>
+                    </div>
+                    <div class="col-12">
+                        <label>Mesaj</label>
+                        <p class="message"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning updateStatus">Status dəyiş</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -52,4 +52,14 @@ $(document).ready(function () {
       }
   }
   });
+    if ($("#contact .successText").text() != "") {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".form-cont").offset().top
+        }, 0);
+        setTimeout(() =>
+            {
+                $("#contact .successText").text("")
+            }, 5000
+        );
+    }
 });

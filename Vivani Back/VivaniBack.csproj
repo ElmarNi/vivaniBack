@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <None Remove="Areas\admin\Views\About\" />
+    <None Remove="Areas\admin\Views\ContactMessages\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
@@ -40,22 +41,22 @@
   <ItemGroup>
     <Folder Include="Areas\admin\Data\" />
     <Folder Include="Areas\admin\Models\" />
-    <Folder Include="wwwroot\img\contactPhoto\" />
     <Folder Include="wwwroot\img\whyChooseUs\" />
     <Folder Include="wwwroot\lib\jquery\" />
     <Folder Include="wwwroot\img\about\" />
     <Folder Include="Areas\admin\Views\About\" />
+    <Folder Include="Areas\admin\Views\ContactMessages\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.5" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\whyChooseUs\" />

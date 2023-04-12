@@ -22,8 +22,6 @@
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.AspNetCore.Connections.Abstractions.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.AspNetCore.CookiePolicy.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.AspNetCore.Cors.dll
-/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.AspNetCore.Cryptography.Internal.dll
-/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.AspNetCore.DataProtection.Abstractions.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.AspNetCore.DataProtection.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -116,8 +114,6 @@
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.Extensions.Hosting.Abstractions.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.Extensions.Hosting.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.Extensions.Http.dll
-/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.Extensions.Identity.Core.dll
-/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.Extensions.Identity.Stores.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.Extensions.Localization.Abstractions.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.Extensions.Localization.dll
 /Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/bin/Debug/net7.0/refs/Microsoft.Extensions.Logging.Abstractions.dll

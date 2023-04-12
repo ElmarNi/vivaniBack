@@ -1,22 +1,39 @@
 ﻿<Properties StartupConfiguration="{C1274A92-A601-4E00-A929-C96101EC2822}|Default">
-  <MonoDevelop.Ide.ItemProperties.VivaniBack PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vivani Back/Areas/admin/Views/ContactMessages/Index.cshtml">
+    <Files>
+      <File FileName="Vivani Back/Areas/admin/Controllers/ContactMessagesController.cs" Line="25" Column="50" />
+      <File FileName="Vivani Back/Areas/admin/Controllers/AboutController.cs" Line="18" Column="1" />
+      <File FileName="Vivani Back/Areas/admin/Views/ContactMessages/Index.cshtml" Line="16" Column="19" />
+      <File FileName="Vivani Back/Models/ContactForm.cs" Line="25" Column="27" />
+      <File FileName="Vivani Back/Controllers/ContactController.cs" Line="51" Column="36" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Vivani Back" expanded="True">
             <Node name="VivaniBack" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="admin" expanded="True">
+                  <Node name="Views" expanded="True">
+                    <Node name="ContactMessages" expanded="True">
+                      <Node name="Index.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.VivaniBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

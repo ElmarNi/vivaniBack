@@ -24,10 +24,10 @@ namespace VivaniBack.Models
         public string SmallHeader { get; set; }
 
 
-        [Required(ErrorMessage = "Email boş olmamalıdır"), EmailAddress, DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "Email boş olmamalıdır"), EmailAddress(ErrorMessage = "E-mail düzgün daxil edilməmişdir"), DataType(DataType.EmailAddress, ErrorMessage = "E-mail düzgün daxil edilməmişdir")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Əlaqə nömrəsi boş olmamalıdır"), DataType(DataType.PhoneNumber)]
+        [Required(ErrorMessage = "Əlaqə nömrəsi boş olmamalıdır"), RegularExpression("^[0-9]*$", ErrorMessage = "Nömrəniz yalnız rəqəmlərdən ibarət olmalıdır")]
         public string PhoneNumber { get; set; }
 
         [Required(ErrorMessage = "Ünvan boş olmamalıdır")]

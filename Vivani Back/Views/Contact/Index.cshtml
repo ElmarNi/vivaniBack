@@ -4,7 +4,7 @@
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <p>
-                    <a href="index.html">Ana səhifə</a>
+                    <a asp-controller="Home" asp-action="Index">Ana səhifə</a>
                     <i class="fas fa-angle-double-right"></i>
                     Əlaqə
                 </p>
@@ -17,30 +17,30 @@
         <div class="row">
             <div class="col-lg-6 mb-5 mb-lg-0">
                 <div class="image-wrapper">
-                    <img src="~/img/@Model.contact.FirstOrDefault().ImageUrl" alt="">
+                    <img src="~/img/@Model.contact.ImageUrl" alt="">
                 </div>
             </div>
             <div class="col-lg-6 align-self-center px-lg-5">
                 <div class="main-heading text-center text-lg-left">
-                    <h1>@Model.contact.FirstOrDefault().MainHeader</h1>
-                    <p>@Model.contact.FirstOrDefault().SmallHeader</p>
+                    <h1>@Model.contact.MainHeader</h1>
+                    @Html.Raw(Model.contact.SmallHeader)
                 </div>
                 <div class="row">
                     <div class="col-6 adress">
                         <h1>Ünvan</h1>
-                        <p>@Model.contact.FirstOrDefault().Adress</p>
+                        <p>@Model.contact.Adress</p>
                     </div>
                     <div class="col-6 phone">
                         <h1>Əlaqə nömrəsi</h1>
-                        <a href="tel:">@Model.contact.FirstOrDefault().PhoneNumber</a>
+                        <a href="tel:@Model.contact.PhoneNumber">@Model.contact.PhoneNumber</a>
                     </div>
                     <div class="col-6 email">
                         <h1>Email</h1>
-                        <a href="mailto:">@Model.contact.FirstOrDefault().Email</a>
+                        <a href="mailto:@Model.contact.Email">@Model.contact.Email</a>
                     </div>
                     <div class="col-6 hours">
                         <h1>İş saatları</h1>
-                        <p>@Model.contact.FirstOrDefault().Hours</p>
+                        <p>@Model.contact.Hours</p>
                     </div>
                 </div>
             </div>
@@ -58,6 +58,7 @@
             <div class="col-12">
                 <h1>Bizə yazın</h1>
                 <form method="POST">
+                    <p class="text-success successText text-center">@ViewBag.Success</p>
                     <div class="row">
                         <div asp-validation-summary="ModelOnly"></div>
                         <div class="col-md-4">

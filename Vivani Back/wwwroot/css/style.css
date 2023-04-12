@@ -1004,8 +1004,13 @@ footer .copy {
 
     #contact .adress p, #contact .adress a, #contact .phone p, #contact .phone a, #contact .email p, #contact .email a, #contact .hours p, #contact .hours a {
         color: #666666;
-        font-size: 15px;
+        transition: all .3s ease;
     }
+
+        #contact .phone a:hover, #contact .email a:hover {
+            color: #dda245;
+        }
+
 
 #contact .map {
     margin: 100px 0;

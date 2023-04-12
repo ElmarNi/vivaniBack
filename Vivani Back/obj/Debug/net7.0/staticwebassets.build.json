@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7cO16BhKw6gFytscOmh5WJERUh8w7ufg39zHfpt0JQE=",
+  "Hash": "aadXVgih21ZGAUGjSbRlFR9Yf+gvj5N2G3UBeaWKN6M=",
   "Source": "VivaniBack",
   "BasePath": "_content/VivaniBack",
   "Mode": "Default",
@@ -270,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/admin/js/sb-admin-2.min.js"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/updateContactMessageStatusFetch.js",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "admin/js/updateContactMessageStatusFetch.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/js/updateContactMessageStatusFetch.js"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ckeditor_4.16.0_full/.DS_Store",
@@ -9486,12 +9503,12 @@
       "OriginalItemSpec": "wwwroot/img/breadcurmb-img.png"
     },
     {
-      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/contactPhoto/e5b4b6c1-1bb4-476d-a409-6a2790d1c8cacontact.png",
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/contact/.DS_Store",
       "SourceId": "VivaniBack",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
       "BasePath": "_content/VivaniBack",
-      "RelativePath": "img/contactPhoto/e5b4b6c1-1bb4-476d-a409-6a2790d1c8cacontact.png",
+      "RelativePath": "img/contact/.DS_Store",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -9500,7 +9517,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/contactPhoto/e5b4b6c1-1bb4-476d-a409-6a2790d1c8cacontact.png"
+      "OriginalItemSpec": "wwwroot/img/contact/.DS_Store"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/contact/contact.png",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "img/contact/contact.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/contact/contact.png"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/ear.jpg",

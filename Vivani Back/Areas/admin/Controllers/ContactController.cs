@@ -28,69 +28,63 @@ namespace VivaniBack.Areas.admin.Controllers
             }
             return Redirect("/admin/account");
         }
-        public async Task<IActionResult> Update(int? id)
-        {
-            if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
-            {
-                if (id == null || await _context.contact.FindAsync(id) == null)
-                {
-                    return NotFound();
-                }
-                return View(await _context.contact.FindAsync(id));
-            }
-            return Redirect("/admin/account");
-        }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(Contact contact)
+        [HttpPost, ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(Contact contact)
         {
             if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
             {
+                Contact contactFromDb = _context.contact.FirstOrDefault();
+                if (contactFromDb == null) return NotFound();
+
                 if (!ModelState.IsValid || contact == null)
                 {
                     return NotFound();
                 }
-                if (contact.MainHeader == string.Empty)
+                if (string.IsNullOrEmpty(contact.MainHeader))
                 {
-                    ModelState.AddModelError("", "Əsas Başlıq boş olmamalıdır");
-                    return View(contact);
+                    ModelState.AddModelError("MainHeader", "Əsas Başlıq boş olmamalıdır");
+                    return View(contactFromDb);
                 }
-                if (contact.SmallHeader == string.Empty)
+                if (string.IsNullOrEmpty(contact.SmallHeader))
                 {
-                    ModelState.AddModelError("", "Kiçik Başlıq boş olmamalıdır");
-                    return View(contact);
+                    ModelState.AddModelError("SmallHeader", "Kiçik Başlıq boş olmamalıdır");
+                    return View(contactFromDb);
                 }
-                if (contact.Adress == string.Empty)
+                if (string.IsNullOrEmpty(contact.Adress))
                 {
-                    ModelState.AddModelError("", "Ünvan boş olmamalıdır");
-                    return View(contact);
+                    ModelState.AddModelError("Adress", "Ünvan boş olmamalıdır");
+                    return View(contactFromDb);
                 }
-                if (contact.PhoneNumber == string.Empty)
+                if (string.IsNullOrEmpty(contact.PhoneNumber))
                 {
-                    ModelState.AddModelError("", "Əlaqə nömrəsi boş olmamalıdır");
-                    return View(contact);
+                    ModelState.AddModelError("PhoneNumber", "Əlaqə nömrəsi boş olmamalıdır");
+                    return View(contactFromDb);
                 }
-                if (contact.Email == string.Empty)
+                if (!int.TryParse(contact.PhoneNumber, out _))
                 {
-                    ModelState.AddModelError("", "Email boş olmamalıdır");
-                    return View(contact);
+                    ModelState.AddModelError("PhoneNumber", "Nömrəniz yalnız rəqəmlərdən ibarət olmalıdır");
+                    return View(contactFromDb);
                 }
-                if (contact.Hours == string.Empty)
+                if (string.IsNullOrEmpty(contact.Email))
                 {
-                    ModelState.AddModelError("", "İş saatları boş olmamalıdır");
-                    return View(contact);
+                    ModelState.AddModelError("Email", "Email boş olmamalıdır");
+                    return View(contactFromDb);
                 }
-                Contact contactFromDb = await _context.contact.FindAsync(contact.Id);
+                if (string.IsNullOrEmpty(contact.Hours))
+                {
+                    ModelState.AddModelError("Hours", "İş saatları boş olmamalıdır");
+                    return View(contactFromDb);
+                }
                 if (contact.Image != null)
                 {
                     if (!contact.Image.ContentType.Contains("image/"))
                     {
-                        ModelState.AddModelError("", "Şəkilin formatı düzgün deyil");
+                        ModelState.AddModelError("Image", "Şəkilin formatı düzgün deyil");
                         return View(contactFromDb);
                     }
                     RemovePhoto(_env.WebRootPath, contactFromDb.ImageUrl);
-                    contactFromDb.ImageUrl = await contact.Image.SavePhotoAsync(_env.WebRootPath, "contactPhoto");
+                    contactFromDb.ImageUrl = await contact.Image.SavePhotoAsync(_env.WebRootPath, "contact");
                 }
                 contactFromDb.MainHeader = contact.MainHeader;
                 contactFromDb.SmallHeader = contact.SmallHeader;
@@ -99,7 +93,8 @@ namespace VivaniBack.Areas.admin.Controllers
                 contactFromDb.Email = contact.Email;
                 contactFromDb.Hours = contact.Hours;
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ViewBag.Success = "Məlumat uğurla yeniləndi";
+                return View(contactFromDb);
             }
             return Redirect("/admin/account");
         }

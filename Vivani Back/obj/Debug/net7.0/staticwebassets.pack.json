@@ -93,6 +93,10 @@
       "PackagePath": "staticwebassets/admin/js/sb-admin-2.min.js"
     },
     {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/updateContactMessageStatusFetch.js",
+      "PackagePath": "staticwebassets/admin/js/updateContactMessageStatusFetch.js"
+    },
+    {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/ckeditor_4.16.0_full/.DS_Store",
       "PackagePath": "staticwebassets/ckeditor_4.16.0_full/.DS_Store"
     },
@@ -2229,8 +2233,12 @@
       "PackagePath": "staticwebassets/img/breadcurmb-img.png"
     },
     {
-      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/contactPhoto/e5b4b6c1-1bb4-476d-a409-6a2790d1c8cacontact.png",
-      "PackagePath": "staticwebassets/img/contactPhoto/e5b4b6c1-1bb4-476d-a409-6a2790d1c8cacontact.png"
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/contact/.DS_Store",
+      "PackagePath": "staticwebassets/img/contact/.DS_Store"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/contact/contact.png",
+      "PackagePath": "staticwebassets/img/contact/contact.png"
     },
     {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/ear.jpg",

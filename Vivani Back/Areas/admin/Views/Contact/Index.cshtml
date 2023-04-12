@@ -1,42 +1,70 @@
 ﻿@model Contact
-<section>
+<style>
+    form span {
+        font-size: 14px;
+        color: red;
+    }
+</style>
+<section id="contactAdmin">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h1 class="text-center mb-5">Əlaqə məlumatları</h1>
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Əsas başlıq</th>
-                                <th scope="col">Kiçik başlıq</th>
-                                <th scope="col">Ünvan</th>
-                                <th scope="col">Əlaqə nömrəsi</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">İş saatları</th>
-                                <th scope="col">Şəkil</th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">@Model.Id</th>
-                                <th>@Model.MainHeader</th>
-                                <th>@Model.SmallHeader</th>
-                                <td>@Model.Adress</td>
-                                <td>@Model.PhoneNumber</td>
-                                <td>@Model.Email</td>
-                                <td>@Model.Hours</td>
-                                <td><img src="~/img/@Model.ImageUrl" width="120" /></td>
-                                <td>
-                                    <a class="btn btn-warning" asp-action="update" asp-route-id="@Model.Id">Yenilə</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="col-12 text-success text-center">
+                <h3>@ViewBag.Success</h3>
             </div>
         </div>
+        <form method="post" class="row" enctype="multipart/form-data">
+            <div class="col-6 oldImage mb-3">
+                <p style="margin: 0">Köhnə şəkil</p>
+                <img class="img-fluid" src="/img/@Model.ImageUrl" />
+            </div>
+
+            <div class="col-6 newImage mb-3">
+                <p style="margin: 0">Yeni şəkil</p>
+                <img class="img-fluid" src="" />
+            </div>
+            <div class="col-12 mb-3" asp-validation-summary="ModelOnly"></div>
+            <div class="col-md-4 mb-3">
+                <label>Şəkil</label>
+                <input asp-for="Image" class="w-100" />
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Əsas başlıq</label>
+                <input asp-for="MainHeader" class="w-100" />
+                <span asp-validation-for="MainHeader"></span>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Ünvan</label>
+                <input asp-for="Adress" class="w-100" />
+                <span asp-validation-for="Adress"></span>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Əlaqə nömrəsi</label>
+                <input asp-for="PhoneNumber" class="w-100" />
+                <span asp-validation-for="PhoneNumber"></span>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Email</label>
+                <input asp-for="Email" class="w-100" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>İş saatları</label>
+                <input asp-for="Hours" class="w-100" />
+                <span asp-validation-for="Hours"></span>
+            </div>
+            <div class="col-12 mb-3">
+                <label>Kiçik başlıq</label>
+                <textarea asp-for="SmallHeader" id="editor"></textarea>
+                <span asp-validation-for="SmallHeader" class="validation-span"></span>
+            </div>
+            <div class="col-12">
+                <input type="submit" value="Yadda saxla" class="btn btn bg-success text-white" />
+            </div>
+        </form>
     </div>
 </section>
+@section Scripts{
+    <script src="~/ckeditor_4.16.0_full/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("editor")</script>
+    <partial name="_ValidationScriptsPartial" />
+}

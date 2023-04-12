@@ -19,7 +19,7 @@ namespace VivaniBack.Controllers
         {
             ContactVM VM = new ContactVM
             {
-                contact = _context.contact
+                contact = _context.contact.FirstOrDefault()
             };
             return View(VM);
         }
@@ -30,7 +30,7 @@ namespace VivaniBack.Controllers
         {
             ContactVM VM = new ContactVM
             {
-                contact = _context.contact
+                contact = _context.contact.FirstOrDefault()
             };
             if (form == null)
             {
@@ -47,11 +47,13 @@ namespace VivaniBack.Controllers
                 PhoneNumber = form.PhoneNumber,
                 Email = form.Email,
                 Message = form.Message,
-                Date = DateTime.Now
+                Date = DateTime.Now,
+                IsResponsed = false
             };
             await _context.contactForms.AddAsync(newForm);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            ViewBag.Success = "Mesajınız uğurla göndərilmişdir";
+            return View(new ContactVM { contact = _context.contact.FirstOrDefault()});
         }
     }
 }

@@ -7,7 +7,7 @@ namespace VivaniBack.Models
 {
     public class ContactVM
     {
-        public IEnumerable<Contact> contact { get; set; }
+        public Contact contact { get; set; }
         public ContactForm form { get; set; }
     }
 }
