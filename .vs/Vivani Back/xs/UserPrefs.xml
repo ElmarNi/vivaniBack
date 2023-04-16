@@ -1,16 +1,10 @@
 ﻿<Properties StartupConfiguration="{C1274A92-A601-4E00-A929-C96101EC2822}|Default">
-  <MonoDevelop.Ide.ItemProperties.VivaniBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Vivani Back/wwwroot/admin/js/updateContactMessageStatusFetch.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vivani Back/Areas/admin/Controllers/SliderController.cs">
     <Files>
-      <File FileName="Vivani Back/Areas/admin/Views/ContactMessages/Index.cshtml" Line="60" Column="47" />
-      <File FileName="Vivani Back/Areas/admin/Controllers/FetchController.cs" Line="22" Column="36" />
-      <File FileName="Vivani Back/wwwroot/admin/js/sb-admin-2.js" Line="81" Column="28" />
-      <File FileName="Vivani Back/Areas/admin/Views/About/Index.cshtml" Line="10" Column="1" />
-      <File FileName="Vivani Back/wwwroot/admin/js/updateContactMessageStatusFetch.js" Line="24" Column="83" />
+      <File FileName="Vivani Back/Areas/admin/Controllers/SliderController.cs" Line="20" Column="32" />
+      <File FileName="Vivani Back/Areas/admin/Views/Slider/Update.cshtml" Line="11" Column="39" />
+      <File FileName="Vivani Back/Areas/admin/Views/Slider/Create.cshtml" Line="8" Column="29" />
+      <File FileName="Vivani Back/wwwroot/admin/js/sb-admin-2.js" Line="74" Column="72" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,23 +13,26 @@
             <Node name="VivaniBack" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="admin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="SliderController.cs" selected="True" />
+                  </Node>
                   <Node name="Views" expanded="True">
-                    <Node name="About" expanded="True" />
-                    <Node name="ContactMessages" expanded="True" />
-                    <Node name="Shared" expanded="True" />
+                    <Node name="Slider" expanded="True" />
+                    <Node name="WhyUs" expanded="True" />
                   </Node>
                 </Node>
               </Node>
-              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="admin" expanded="True">
-                  <Node name="js" expanded="True">
-                    <Node name="updateContactMessageStatusFetch.js" selected="True" />
-                  </Node>
+                  <Node name="js" expanded="True" />
+                </Node>
+                <Node name="css" expanded="True" />
+                <Node name="img" expanded="True">
+                  <Node name="slider" expanded="True" />
                 </Node>
                 <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -43,6 +40,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.VivaniBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

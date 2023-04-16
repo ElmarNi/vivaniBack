@@ -4,11 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using VivaniBack.DAL;
 using VivaniBack.Models;
 using static VivaniBack.Extensions.IFormFileEx;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace VivaniBack.Areas.admin.Controllers
 {
@@ -22,12 +21,11 @@ namespace VivaniBack.Areas.admin.Controllers
             _context = context;
             _env = env;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
-            {
-                return View(_context.about.FirstOrDefault());
-            }
+                return View(await _context.about.FirstOrDefaultAsync());
+
             return Redirect("/admin/account");
         }
 
@@ -37,8 +35,6 @@ namespace VivaniBack.Areas.admin.Controllers
             if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
             {
                 if (!ModelState.IsValid) return View(about);
-
-                
 
                 About aboutDb = _context.about.FirstOrDefault();
                 if (aboutDb == null) return NotFound();

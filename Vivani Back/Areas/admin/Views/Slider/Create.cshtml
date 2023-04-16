@@ -1,0 +1,42 @@
+﻿@model HomeSlider
+<style>
+    form span {
+        font-size: 14px;
+        color: red;
+    }
+</style>
+<section id="homeSliderAdminCreate">
+    <div class="container">
+        <form method="post" class="row" enctype="multipart/form-data">
+
+            <div class="col-12 text-center newImage mb-3">
+                <p style="margin: 0">Yeni şəkil</p>
+                <img class="img-fluid" src="" />
+            </div>
+
+            <div class="col-12" asp-validation-summary="ModelOnly"></div>
+            <div class="col-4">
+                <label>Kiçik Başlıq</label>
+                <input asp-for="LittleHeader" class="w-100" />
+                <span asp-validation-for="LittleHeader"></span>
+            </div>
+            <div class="col-4">
+                <label>Böyük Başlıq</label>
+                <input asp-for="LargeHeader" class="w-100" />
+                <span asp-validation-for="LargeHeader"></span>
+            </div>
+            <div class="col-4">
+                <label>Şəkil</label>
+                <input asp-for="Image" class="w-100" />
+                <span asp-validation-for="Image"></span>
+            </div>
+            <div class="col-12 mt-4">
+                <input type="submit" value="Yadda saxla" class="btn btn bg-success text-white" />
+            </div>
+        </form>
+    </div>
+</section>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

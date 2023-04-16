@@ -1,4 +1,14 @@
-﻿$("#contactMessagesAdmin a.updateStatus").click(async function (e) {
+﻿$(document).on('click', '#contactMessagesAdmin button', function (e) {
+    $("#fullMessageInfo p.isResponsed").text($(this).parent().prev().text())
+    $("#fullMessageInfo p.date").text($(this).parent().prev().prev().text())
+    $("#fullMessageInfo p.phoneNumber").text($(this).parent().prev().prev().prev().prev().text())
+    $("#fullMessageInfo p.email").text($(this).parent().prev().prev().prev().prev().prev().text())
+    $("#fullMessageInfo p.name").text($(this).parent().prev().prev().prev().prev().prev().prev().text())
+    $("#fullMessageInfo p.message").text($(this).parent().prev().prev().prev().attr("data-message"))
+    $("#fullMessageInfo").attr("data-id", $(this).attr("data-id"))
+});
+
+$("#contactMessagesAdmin a.updateStatus").click(async function (e) {
     e.preventDefault();
     let id = $(this).attr("data-id")
     if (await getResponse(id, false)) {

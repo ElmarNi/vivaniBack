@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets/admin/img/undraw_rocket.svg"
     },
     {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/deleteSliderFetch.js",
+      "PackagePath": "staticwebassets/admin/js/deleteSliderFetch.js"
+    },
+    {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/demo/chart-area-demo.js",
       "PackagePath": "staticwebassets/admin/js/demo/chart-area-demo.js"
     },
@@ -2279,6 +2283,14 @@
     {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/ring.jpg",
       "PackagePath": "staticwebassets/img/ring.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider/0d466f53-1dba-47ab-8f37-26ab08d25a13slider2.jpg",
+      "PackagePath": "staticwebassets/img/slider/0d466f53-1dba-47ab-8f37-26ab08d25a13slider2.jpg"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider/b28c45a7-3d4a-4466-bc21-d2ad0432484fslider1.jpg",
+      "PackagePath": "staticwebassets/img/slider/b28c45a7-3d4a-4466-bc21-d2ad0432484fslider1.jpg"
     },
     {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider1.jpg",

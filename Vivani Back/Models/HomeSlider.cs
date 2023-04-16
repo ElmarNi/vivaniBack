@@ -11,12 +11,13 @@ namespace VivaniBack.Models
     public class HomeSlider
     {
         public int Id { get; set; }
+
         public string ImageUrl { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Başlıq boş ola bilməz")]
         public string LittleHeader { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Başlıq boş ola bilməz")]
         public string LargeHeader { get; set; }
 
         [NotMapped]

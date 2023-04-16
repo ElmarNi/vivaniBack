@@ -14,6 +14,7 @@
     <None Remove="Areas\admin\Views\About\" />
     <None Remove="Areas\admin\Views\ContactMessages\" />
     <None Remove="Views\Products\" />
+    <None Remove="Areas\admin\Views\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
@@ -48,6 +49,8 @@
     <Folder Include="Areas\admin\Views\About\" />
     <Folder Include="Areas\admin\Views\ContactMessages\" />
     <Folder Include="Views\Products\" />
+    <Folder Include="Areas\admin\Views\Slider\" />
+    <Folder Include="wwwroot\img\slider\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -64,5 +67,6 @@
     <Content Remove="wwwroot\img\whyChooseUs\" />
     <Content Remove="wwwroot\lib\jquery\" />
     <Content Remove="wwwroot\img\about\" />
+    <Content Remove="wwwroot\img\slider\" />
   </ItemGroup>
 </Project>

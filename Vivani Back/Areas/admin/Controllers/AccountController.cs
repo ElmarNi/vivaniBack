@@ -30,14 +30,11 @@ namespace VivaniBack.Areas.admin.Controllers
             return View();
         }
 
-        [ValidateAntiForgeryToken]
-        [HttpPost]
+        [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(LoginVm login)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(login);
-            }
+            if (!ModelState.IsValid) return View(login);
+
             AppUser logedUser = await _userManager.FindByNameAsync(login.Username);
             if (logedUser == null)
             {
@@ -50,11 +47,8 @@ namespace VivaniBack.Areas.admin.Controllers
                 ModelState.AddModelError("", "İstifadəçi adı və ya şifrə yanlışdır");
                 return View();
             }
-            if (await _userManager.IsInRoleAsync(logedUser, "admin"))
-            {
-                return Redirect("/admin/dashboard");
-            }
-            
+            if (await _userManager.IsInRoleAsync(logedUser, "admin")) return Redirect("/admin/dashboard");
+
             return View(login);
         }
 
@@ -66,22 +60,17 @@ namespace VivaniBack.Areas.admin.Controllers
         public IActionResult ChangePassword()
         {
             if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
-            {
                 return View();
-            }
             return RedirectToAction(nameof(Index));
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> ChangePassword(ChangePasswordVm changePassword)
         {
             if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
             {
                 AppUser currUser = await _userManager.GetUserAsync(User);
-                if (currUser == null || !ModelState.IsValid)
-                {
-                    return View(changePassword);
-                }
+                if (currUser == null || !ModelState.IsValid) return View(changePassword);
+
                 if (!await _userManager.CheckPasswordAsync(currUser, changePassword.OldPassword))
                 {
                     ModelState.AddModelError("", "Köhnə şifrə düzgün deyil");

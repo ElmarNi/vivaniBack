@@ -21,9 +21,7 @@ namespace VivaniBack.Areas.admin.Controllers
         public IActionResult Index()
         {
             if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
-            {
                 return View(_context.contactForms);
-            }
             return Redirect("/admin/account");
         }
     }

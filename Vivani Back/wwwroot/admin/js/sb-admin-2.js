@@ -70,15 +70,7 @@
     change_img("#whyChooseUsAdmin #IconImage", "#whyChooseUsAdmin .newImage img");
     change_img("#adminAbout #Image", "#adminAbout .newImage img");
     change_img("#contactAdmin #Image", "#contactAdmin .newImage img");
-
-    $(document).on('click', '#contactMessagesAdmin button', function (e) {
-        $("#fullMessageInfo p.isResponsed").text($(this).parent().prev().text())
-        $("#fullMessageInfo p.date").text($(this).parent().prev().prev().text())
-        $("#fullMessageInfo p.phoneNumber").text($(this).parent().prev().prev().prev().prev().text())
-        $("#fullMessageInfo p.email").text($(this).parent().prev().prev().prev().prev().prev().text())
-        $("#fullMessageInfo p.name").text($(this).parent().prev().prev().prev().prev().prev().prev().text())
-        $("#fullMessageInfo p.message").text($(this).parent().prev().prev().prev().attr("data-message"))
-        $("#fullMessageInfo").attr("data-id", $(this).attr("data-id"))
-    });
+    change_img("#homeSliderAdminCreate #Image", "#homeSliderAdminCreate .newImage img");
+    change_img("#homeSliderAdminUpdate #Image", "#homeSliderAdminUpdate .newImage img");
     
 })(jQuery); // End of use strict

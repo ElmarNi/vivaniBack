@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qhPvggRRC8dNqiB82BRO6XnDTBDgAaS/O4w5yvV1ckE=",
+  "Hash": "uHjU6Avm5+U57cP/1JoRUTpHj3NdU793dUE1/GkYLjI=",
   "Source": "VivaniBack",
   "BasePath": "_content/VivaniBack",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/admin/img/undraw_rocket.svg"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/deleteSliderFetch.js",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "admin/js/deleteSliderFetch.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/js/deleteSliderFetch.js"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/demo/chart-area-demo.js",
@@ -9705,6 +9722,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/ring.jpg"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider/0d466f53-1dba-47ab-8f37-26ab08d25a13slider2.jpg",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "img/slider/0d466f53-1dba-47ab-8f37-26ab08d25a13slider2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/slider/0d466f53-1dba-47ab-8f37-26ab08d25a13slider2.jpg"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider/b28c45a7-3d4a-4466-bc21-d2ad0432484fslider1.jpg",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "img/slider/b28c45a7-3d4a-4466-bc21-d2ad0432484fslider1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/slider/b28c45a7-3d4a-4466-bc21-d2ad0432484fslider1.jpg"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider1.jpg",
