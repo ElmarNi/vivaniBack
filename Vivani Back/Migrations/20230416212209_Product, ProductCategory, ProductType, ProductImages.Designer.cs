@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VivaniBack.DAL;
 
@@ -11,9 +12,11 @@ using VivaniBack.DAL;
 namespace VivaniBack.Migrations
 {
     [DbContext(typeof(VivaniDbContext))]
-    partial class VivaniDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230416212209_Product, ProductCategory, ProductType, ProductImages")]
+    partial class ProductProductCategoryProductTypeProductImages
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -356,16 +359,10 @@ namespace VivaniBack.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DiscountPercent")
+                    b.Property<int>("DiscountPercent")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsBestSeller")
-                        .HasColumnType("bit");
-
                     b.Property<bool>("IsNew")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsTrendingProduct")
                         .HasColumnType("bit");
 
                     b.Property<string>("MainImageUrl")
@@ -375,8 +372,8 @@ namespace VivaniBack.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<int>("ProductCategoryId")
                         .HasColumnType("int");

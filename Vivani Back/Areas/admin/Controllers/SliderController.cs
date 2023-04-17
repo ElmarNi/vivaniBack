@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using VivaniBack.DAL;
 using VivaniBack.Models;
 using static VivaniBack.Extensions.IFormFileEx;
@@ -53,13 +54,8 @@ namespace VivaniBack.Areas.admin.Controllers
                     ModelState.AddModelError("Image", "Şəklin formatı düzgün deyil");
                     return View(slider);
                 }
-                HomeSlider newSlider = new HomeSlider
-                {
-                    LittleHeader = slider.LittleHeader,
-                    LargeHeader = slider.LargeHeader,
-                    ImageUrl = await slider.Image.SavePhotoAsync(_env.WebRootPath, "slider")
-                };
-                await _context.homeSliders.AddAsync(newSlider);
+                slider.ImageUrl = await slider.Image.SavePhotoAsync(_env.WebRootPath, "slider");
+                await _context.homeSliders.AddAsync(slider);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -70,7 +66,7 @@ namespace VivaniBack.Areas.admin.Controllers
         {
             if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
             {
-                if (id == null || await _context.homeSliders.FindAsync(id) == null) return NotFound();
+                if (id == null || !await _context.homeSliders.AnyAsync(s => s.Id == id)) return NotFound();
 
                 return View(await _context.homeSliders.FindAsync(id));
             }

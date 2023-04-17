@@ -15,6 +15,10 @@
     <None Remove="Areas\admin\Views\ContactMessages\" />
     <None Remove="Views\Products\" />
     <None Remove="Areas\admin\Views\Slider\" />
+    <None Remove="Areas\admin\Views\ProductCategory\" />
+    <None Remove="Areas\admin\Views\ProductType\" />
+    <None Remove="Areas\admin\Views\Product\" />
+    <None Remove="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
@@ -41,8 +45,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\admin\Data\" />
-    <Folder Include="Areas\admin\Models\" />
     <Folder Include="wwwroot\img\whyChooseUs\" />
     <Folder Include="wwwroot\lib\jquery\" />
     <Folder Include="wwwroot\img\about\" />
@@ -51,6 +53,10 @@
     <Folder Include="Views\Products\" />
     <Folder Include="Areas\admin\Views\Slider\" />
     <Folder Include="wwwroot\img\slider\" />
+    <Folder Include="Areas\admin\Views\ProductCategory\" />
+    <Folder Include="Areas\admin\Views\ProductType\" />
+    <Folder Include="Areas\admin\Views\Product\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>

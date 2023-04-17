@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{C1274A92-A601-4E00-A929-C96101EC2822}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Vivani Back/Areas/admin/Controllers/SliderController.cs">
+  <MonoDevelop.Ide.ItemProperties.VivaniBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vivani Back/Models/Product.cs">
     <Files>
-      <File FileName="Vivani Back/Areas/admin/Controllers/SliderController.cs" Line="20" Column="32" />
-      <File FileName="Vivani Back/Areas/admin/Views/Slider/Update.cshtml" Line="11" Column="39" />
-      <File FileName="Vivani Back/Areas/admin/Views/Slider/Create.cshtml" Line="8" Column="29" />
-      <File FileName="Vivani Back/wwwroot/admin/js/sb-admin-2.js" Line="74" Column="72" />
+      <File FileName="Vivani Back/Areas/admin/Controllers/ProductController.cs" Line="45" Column="39" />
+      <File FileName="Vivani Back/Areas/admin/Views/Product/Create.cshtml" Line="109" Column="5" />
+      <File FileName="Vivani Back/Models/Product.cs" Line="29" Column="30" />
+      <File FileName="Vivani Back/Areas/admin/Views/About/Index.cshtml" Line="44" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,27 +14,20 @@
             <Node name="VivaniBack" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="admin" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="SliderController.cs" selected="True" />
-                  </Node>
+                  <Node name="Controllers" expanded="True" />
                   <Node name="Views" expanded="True">
-                    <Node name="Slider" expanded="True" />
-                    <Node name="WhyUs" expanded="True" />
+                    <Node name="About" expanded="True" />
+                    <Node name="Product" expanded="True" />
+                    <Node name="Shared" expanded="True" />
                   </Node>
                 </Node>
               </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="admin" expanded="True">
-                  <Node name="js" expanded="True" />
-                </Node>
-                <Node name="css" expanded="True" />
-                <Node name="img" expanded="True">
-                  <Node name="slider" expanded="True" />
-                </Node>
-                <Node name="js" expanded="True" />
-                <Node name="lib" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Product.cs" selected="True" />
               </Node>
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -41,10 +35,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.VivaniBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

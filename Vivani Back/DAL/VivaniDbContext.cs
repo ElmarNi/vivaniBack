@@ -17,5 +17,9 @@ namespace VivaniBack.DAL
         public DbSet<Contact> contact { get; set; }
         public DbSet<ContactForm> contactForms { get; set; }
         public DbSet<About> about { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<ProductType> productTypes { get; set; }
+        public DbSet<ProductImage> productImages { get; set; }
+        public DbSet<Product> products { get; set; }
     }
 }

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VivaniBack.Models;
 
-namespace VivaniBack.Models
+namespace VivaniBack.ViewModels
 {
     public class HomeVm
     {

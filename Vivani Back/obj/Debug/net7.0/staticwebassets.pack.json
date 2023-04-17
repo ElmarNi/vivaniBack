@@ -69,6 +69,14 @@
       "PackagePath": "staticwebassets/admin/img/undraw_rocket.svg"
     },
     {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/deleteProductCategoryFetch.js",
+      "PackagePath": "staticwebassets/admin/js/deleteProductCategoryFetch.js"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/deleteProductTypeFetch.js",
+      "PackagePath": "staticwebassets/admin/js/deleteProductTypeFetch.js"
+    },
+    {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/admin/js/deleteSliderFetch.js",
       "PackagePath": "staticwebassets/admin/js/deleteSliderFetch.js"
     },
@@ -2289,8 +2297,8 @@
       "PackagePath": "staticwebassets/img/slider/0d466f53-1dba-47ab-8f37-26ab08d25a13slider2.jpg"
     },
     {
-      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider/b28c45a7-3d4a-4466-bc21-d2ad0432484fslider1.jpg",
-      "PackagePath": "staticwebassets/img/slider/b28c45a7-3d4a-4466-bc21-d2ad0432484fslider1.jpg"
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider/8fcce111-1010-48a4-8023-60c5810193b2slider1.jpg",
+      "PackagePath": "staticwebassets/img/slider/8fcce111-1010-48a4-8023-60c5810193b2slider1.jpg"
     },
     {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/slider1.jpg",

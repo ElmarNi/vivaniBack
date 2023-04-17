@@ -1,20 +1,20 @@
-﻿@model IEnumerable<HomeSlider>
+﻿@model IEnumerable<ProductType>
 
-<section id="homeSliderAdminIndex">
+<section id="productTypeAdminIndex">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center mb-5">Slayder</h1>
-                <a class="btn btn-success d-block" asp-action="Create">Əlavə et</a>
-                <h3 class="textSuccess my-3"></h3>
+                <h1 class="text-center mb-5">Məhsul Əyarları</h1>
+                <a class="btn btn-success d-block mb-3" asp-action="Create">Əlavə et</a>
+                <div class="col-12 text-center">
+                    <h3 class="textSuccess"></h3>
+                </div>
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Şəkil</th>
-                                <th scope="col">Kişik Başlıq</th>
-                                <th scope="col">Böyük Başlıq</th>
+                                <th scope="col">Əyar</th>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
@@ -23,12 +23,10 @@
                             {
                                 <tr data-id="@item.Id">
                                     <th scope="row">@item.Id</th>
-                                    <td><img width="200" src="/img/@item.ImageUrl" /></td>
-                                    <td>@item.LittleHeader</td>
-                                    <td>@item.LargeHeader</td>
-                                    <td>
-                                        <a class="btn btn-warning d-block" asp-action="update" asp-route-id="@item.Id">Yenilə</a>
-                                        <a class="btn btn-danger d-block mt-2 openConfirmationModal" href="#" data-id="@item.Id" data-toggle="modal" data-target="#confirmationModal">Sil</a>
+                                    <td>@item.Name</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-warning" asp-action="update" asp-route-id="@item.Id">Yenilə</a>
+                                        <a class="btn btn-danger openConfirmationModal" href="#" data-id="@item.Id" data-toggle="modal" data-target="#confirmationModal">Sil</a>
                                     </td>
                                 </tr>
                             }
@@ -47,11 +45,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="" class="img-fluid" />
-                    Seçilmiş slayderi silməyə əminsiniz ?
+                    Seçilmiş əyarı silməyə əminsiniz ?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary deleteSlider" data-dismiss="modal">Hə</button>
+                    <button type="button" class="btn btn-secondary deleteCategory" data-dismiss="modal">Hə</button>
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Yox</button>
                 </div>
             </div>
@@ -60,5 +57,5 @@
 </section>
 
 @section Scripts{
-    <script src="~/admin/js/deleteSliderFetch.js" type="module"></script>
+    <script src="~/admin/js/deleteProductTypeFetch.js" type="module"></script>
 }

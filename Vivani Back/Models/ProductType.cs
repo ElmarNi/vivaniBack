@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VivaniBack.Models
 {
@@ -7,8 +9,10 @@ namespace VivaniBack.Models
 	{
 		public int Id { get; set; }
 
-		public string Name { get; set; }
+        [Required(ErrorMessage = "Əyar boş ola bilməz")]
+        public string Name { get; set; }
 
+		[NotMapped]
 		public IEnumerable<Product> Products { get; set; }
 	}
 }

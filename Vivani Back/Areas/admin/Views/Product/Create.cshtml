@@ -1,0 +1,110 @@
+﻿@model Product
+<style>
+    form span {
+        font-size: 14px;
+        color: red;
+    }
+</style>
+<section id="productCreateAdmin">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5">Məhsullar</h1>
+            </div>
+        </div>
+        <form method="post" class="row">
+            <div class="col-6 newImage mb-3">
+                <p style="margin: 0">Yeni şəkil</p>
+                <img class="img-fluid" src="" />
+            </div>
+
+            <div class="col-6 oldImage mb-3">
+                <p style="margin: 0">Digər şəkillər</p>
+
+            </div>
+
+            <div class="col-12" asp-validation-summary="ModelOnly"></div>
+            <div class="col-3 mb-3">
+                <label>Ad</label>
+                <input asp-for="Name" class="w-100" />
+                <span asp-validation-for="Name"></span>
+            </div>
+
+            <div class="col-2 mb-3">
+                <label>Qiymət</label>
+                <input asp-for="Price" class="w-100" />
+                <span asp-validation-for="Price"></span>
+            </div>
+
+            <div class="col-2 mb-3">
+                <label>Endirim faizi</label>
+                <input asp-for="DiscountPercent" class="w-100" />
+                <span asp-validation-for="DiscountPercent"></span>
+            </div>
+
+            <div class="col-3 mb-3">
+                <label>Kateqoriya</label>
+                <select class="w-100" asp-for="ProductCategoryId"
+                        asp-items='@(IEnumerable<SelectListItem>)ViewData["productCategories"]'>
+                    <option disabled selected>Kateqoriya seçin</option>
+                </select>
+                <span asp-validation-for="ProductCategoryId"></span>
+            </div>
+
+            <div class="col-2 mb-3">
+                <label>Əyar</label>
+                <select class="w-100" asp-for="ProductTypeId"
+                        asp-items='@(IEnumerable<SelectListItem>)ViewData["productTypes"]'>
+                    <option disabled selected>Əyar seçin</option>
+                </select>
+                <span asp-validation-for="ProductTypeId"></span>
+            </div>
+
+            <div class="col-2 mb-3">
+                <label class="w-100">Yeni</label>
+                <input asp-for="IsNew" />
+                <span asp-validation-for="IsNew"></span>
+            </div>
+
+            <div class="col-2 mb-3">
+                <label class="w-100">Ən çox satılan</label>
+                <input asp-for="IsBestSeller" />
+                <span asp-validation-for="IsBestSeller"></span>
+            </div>
+
+            <div class="col-2 mb-3">
+                <label class="w-100">Trend məhsul</label>
+                <input asp-for="IsTrendingProduct" />
+                <span asp-validation-for="IsTrendingProduct"></span>
+            </div>
+
+            <div class="col-3 mb-3">
+                <label>Əsas şəkil</label>
+                <input asp-for="MainImage" class="w-100" />
+                <span asp-validation-for="MainImage"></span>
+            </div>
+
+            <div class="col-3 mb-3">
+                <label>Digər şəkillər</label>
+                <input asp-for="ProductImagesFile" class="w-100" />
+                <span asp-validation-for="ProductImagesFile"></span>
+            </div>
+
+            <div class="col-12 mb-3">
+                <label>Haqqında</label>
+                <textarea asp-for="Description" id="editor"></textarea>
+                <span asp-validation-for="Description" class="validation-span"></span>
+            </div>
+
+            <div class="col-12 mt-4">
+                <input type="submit" value="Yadda saxla" class="btn btn bg-success text-white" />
+            </div>
+        </form>
+    </div>
+</section>
+
+@section Scripts{
+    <script src="~/ckeditor_4.16.0_full/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("editor")</script>
+    <partial name="_ValidationScriptsPartial" />
+}

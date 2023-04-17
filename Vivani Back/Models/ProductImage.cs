@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Http;
 
 namespace VivaniBack.Models
@@ -9,10 +10,12 @@ namespace VivaniBack.Models
 
 		public int ProductId { get; set; }
 
+		[NotMapped]
 		public Product Product { get; set; }
 
 		public string ImageUrl { get; set; }
 
+		[NotMapped]
 		public IFormFile Image { get; set; }
 	}
 }

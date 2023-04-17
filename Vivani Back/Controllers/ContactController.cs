@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using VivaniBack.DAL;
 using VivaniBack.Models;
+using VivaniBack.ViewModels;
 
 namespace VivaniBack.Controllers
 {
