@@ -1,43 +1,27 @@
 ﻿<Properties StartupConfiguration="{C1274A92-A601-4E00-A929-C96101EC2822}|Default">
-  <MonoDevelop.Ide.ItemProperties.VivaniBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Vivani Back/Models/Product.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vivani Back/ViewModels/ProductsVm.cs">
     <Files>
-      <File FileName="Vivani Back/Areas/admin/Controllers/ProductController.cs" Line="45" Column="39" />
-      <File FileName="Vivani Back/Areas/admin/Views/Product/Create.cshtml" Line="109" Column="5" />
-      <File FileName="Vivani Back/Models/Product.cs" Line="29" Column="30" />
-      <File FileName="Vivani Back/Areas/admin/Views/About/Index.cshtml" Line="44" Column="1" />
+      <File FileName="Vivani Back/Views/Products/Index.cshtml" />
+      <File FileName="Vivani Back/Controllers/ProductsController.cs" />
+      <File FileName="Vivani Back/ViewModels/ProductsVm.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Vivani Back" expanded="True">
             <Node name="VivaniBack" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="admin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True">
-                    <Node name="About" expanded="True" />
-                    <Node name="Product" expanded="True" />
-                    <Node name="Shared" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Product.cs" selected="True" />
-              </Node>
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True" />
+              <Node name="Dependencies" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.VivaniBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

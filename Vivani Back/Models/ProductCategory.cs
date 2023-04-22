@@ -12,8 +12,7 @@ namespace VivaniBack.Models
 		[Required(ErrorMessage = "Kateqoriyanın adı boş ola bilməz")]
 		public string Name { get; set; }
 
-		[NotMapped]
-		public IEnumerable<Product> Products { get; set; }
+		public virtual ICollection<Product> Products { get; set; }
 	}
 }
 

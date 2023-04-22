@@ -57,6 +57,7 @@
     <Folder Include="Areas\admin\Views\ProductType\" />
     <Folder Include="Areas\admin\Views\Product\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="wwwroot\img\products\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -74,5 +75,6 @@
     <Content Remove="wwwroot\lib\jquery\" />
     <Content Remove="wwwroot\img\about\" />
     <Content Remove="wwwroot\img\slider\" />
+    <Content Remove="wwwroot\img\products\" />
   </ItemGroup>
 </Project>

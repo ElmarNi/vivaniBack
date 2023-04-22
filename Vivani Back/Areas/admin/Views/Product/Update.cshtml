@@ -5,7 +5,7 @@
         color: red;
     }
 </style>
-<section id="productCreateAdmin">
+<section id="productUpdateAdmin">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -13,13 +13,34 @@
             </div>
         </div>
         <form method="post" class="row" enctype="multipart/form-data">
+            <div class="col-12 text-center">
+                <h3 class="textSuccess"></h3>
+            </div>
+            <div class="col-6 oldImage mb-3">
+                <p style="margin: 0">Köhnə əsas şəkil</p>
+                <img class="img-fluid" src="/img/@Model.MainImageUrl" />
+            </div>
+
             <div class="col-6 newImage mb-3">
-                <p style="margin: 0">Əsas şəkil</p>
+                <p style="margin: 0">Yeni əsas şəkil</p>
                 <img class="img-fluid" src="" />
             </div>
 
-            <div class="col-6 detailImages mb-3">
-                <p class="m-0 px-2">Digər şəkillər</p>
+            <div class="col-6 oldDetailImages mb-3">
+                <p style="margin: 0">Köhnə digər şəkillər</p>
+                <div class="images d-flex flex-wrap">
+                    @foreach (var item in Model.ProductImages)
+                    {
+                        <div class="img-wrapper pr-2 pb-2 w-50">
+                            <i class="fa-solid fa-xmark openConfirmationModal" data-id="@item.Id" data-toggle="modal" data-target="#confirmationModal"></i>
+                            <img class="img-fluid" src="/img/@item.ImageUrl" />
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="col-6 newDetailImages mb-3">
+                <p style="margin: 0">Yeni digər şəkillər</p>
                 <div class="images d-flex flex-wrap"></div>
             </div>
 
@@ -101,10 +122,30 @@
             </div>
         </form>
     </div>
+
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary deleteCategory" data-dismiss="modal">Hə</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Yox</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 @section Scripts{
     <script src="~/ckeditor_4.16.0_full/ckeditor/ckeditor.js"></script>
     <script>CKEDITOR.replace("editor")</script>
     <partial name="_ValidationScriptsPartial" />
+    <script src="~/admin/js/deleteProductImageFetch.js" type="module"></script>
 }

@@ -33,9 +33,9 @@
                                     <td>@item.Name</td>
                                     <td>@item.Price</td>
                                     <td>@item.DiscountPercent</td>
-                                    <td><input type="checkbox" @(item.IsNew ? "checked" : "") readonly /></td>
-                                    <td><input type="checkbox" @(item.IsBestSeller ? "checked" : "") readonly /></td>
-                                    <td><input type="checkbox" @(item.IsTrendingProduct ? "checked" : "") readonly /></td>
+                                    <td><input type="checkbox" @(item.IsNew ? "checked" : "") disabled /></td>
+                                    <td><input type="checkbox" @(item.IsBestSeller ? "checked" : "") disabled /></td>
+                                    <td><input type="checkbox" @(item.IsTrendingProduct ? "checked" : "") disabled /></td>
                                     <td class="text-right">
                                         <a class="btn btn-warning" asp-action="update" asp-route-id="@item.Id">Yenilə</a>
                                         <a class="btn btn-danger openConfirmationModal" href="#" data-id="@item.Id" data-toggle="modal" data-target="#confirmationModal">Sil</a>
@@ -57,7 +57,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Seçilmiş kateqoriyanı silməyə əminsiniz ?
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary deleteCategory" data-dismiss="modal">Hə</button>
@@ -69,5 +69,5 @@
 </section>
 
 @section Scripts{
-    @*<script src="~/admin/js/deleteProductCategoryFetch.js" type="module"></script>*@
+    <script src="~/admin/js/deleteProductFetch.js" type="module"></script>
 }

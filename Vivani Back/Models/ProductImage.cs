@@ -10,8 +10,7 @@ namespace VivaniBack.Models
 
 		public int ProductId { get; set; }
 
-		[NotMapped]
-		public Product Product { get; set; }
+		public virtual Product Product { get; set; }
 
 		public string ImageUrl { get; set; }
 

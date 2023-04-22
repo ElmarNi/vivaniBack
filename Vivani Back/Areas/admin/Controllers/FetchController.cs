@@ -72,6 +72,38 @@ namespace VivaniBack.Areas.admin.Controllers
             }
             return false;
         }
+
+        [HttpPost]
+        public async Task<bool> deleteProduct(int? id)
+        {
+            if (id != null && await _context.products.AnyAsync(c => c.Id == (int)id))
+            {
+                Product product = await _context.products.Where(p => p.Id == id).Include(p => p.ProductImages).FirstOrDefaultAsync();
+                RemovePhoto(_env.WebRootPath, product.MainImageUrl);
+                foreach (var item in product.ProductImages)
+                {
+                    RemovePhoto(_env.WebRootPath, item.ImageUrl);
+                }
+                _context.products.Remove(product);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
+
+        [HttpPost]
+        public async Task<bool> deleteProductImage(int? id)
+        {
+            if (id != null && await _context.productImages.AnyAsync(c => c.Id == (int)id))
+            {
+                ProductImage productImage = await _context.productImages.FindAsync((int)id);
+                RemovePhoto(_env.WebRootPath, productImage.ImageUrl);
+                _context.productImages.Remove(productImage);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
     }
 }
 

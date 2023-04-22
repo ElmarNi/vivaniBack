@@ -31,25 +31,22 @@ namespace VivaniBack.Models
 		[Required(ErrorMessage = "Kateqoriya seçin")]
 		public int ProductCategoryId { get; set; }
 
-        [NotMapped]
-        public ProductCategory ProductCategory { get; set; }
+        public virtual ProductCategory ProductCategory { get; set; }
 
-		public string MainImageUrl { get; set; }
+        [Required(ErrorMessage = "Əyar seçin")]
+        public int ProductTypeId { get; set; }
+
+        public virtual ProductType ProductType { get; set; }
+
+        public string MainImageUrl { get; set; }
 
 		[NotMapped]
 		public IFormFile MainImage { get; set; }
 
 		[NotMapped]
-		public IEnumerable<IFormFile> ProductImagesFile { get; set; }
+		public ICollection<IFormFile> ProductImagesFile { get; set; }
 
-		[NotMapped]
-		public IEnumerable<ProductImage> ProductImages { get; set; }
-
-        [Required(ErrorMessage = "Əyar seçin")]
-        public int ProductTypeId { get; set; }
-
-        [NotMapped]
-        public ProductType ProductType { get; set; }
+		public virtual ICollection<ProductImage> ProductImages { get; set; }
 	}
 }
 
