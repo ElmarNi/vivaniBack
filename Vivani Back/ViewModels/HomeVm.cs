@@ -11,5 +11,7 @@ namespace VivaniBack.ViewModels
         public IEnumerable<HomeSlider> homeSliders { get; set; }
         public IEnumerable<WhyChooseUs> whyChooseUs { get; set; }
         public IEnumerable<TrendingProductsImage> trendingProductsImage { get; set; }
+        public IEnumerable<Product> bestSellerProducts { get; set; }
+        public IEnumerable<Product> trendingProducts { get; set; }
     }
 }

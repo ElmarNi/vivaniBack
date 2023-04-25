@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+@model IEnumerable<Product>
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-sm-6 col-md-4 mb-4">
+            <div class="item">
+                <div class="image-wrapper mb-3">
+                    <div class="isNew @(product.IsNew ? "" : "d-none")">
+                        Yeni
+                    </div>
+                    <div class="discount @(product.DiscountPercent != 0 ? "" : "d-none")">
+                        @product.DiscountPercent %
+                    </div>
+                    <a asp-controller="products" asp-action="detail" asp-route-id="@product.Id">
+                        <img src="img/@product.MainImageUrl" class="img-fluid" alt="">
+                    </a>
+                    <a href="" class="mainBtn">Daha ətraflı</a>
+                </div>
+                <div class="content">
+                    <a asp-controller="products" asp-action="detail" asp-route-id="@product.Id">
+                        <h1>@product.Name</h1>
+                    </a>
+                    <p class="price d-flex justify-content-between">
+                        @product.Price AZN
+                        <span class="old-price @(product.DiscountPercent != 0 ? "" : "d-none")">@(product.Price - (product.Price * product.DiscountPercent / 100)) AZN</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item @(ViewBag.Page == 1 ? "disabled" : "")">
+            <a class="page-link " href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </li>
+        @for (int i = 0; i < ViewBag.NumberOfPages; i++)
+        {
+            <li class="page-item @(i == (ViewBag.Page - 1) ? "active" : "") @(ViewBag.NumberOfPages == 1 ? "disabled" : "")">
+                <a class="page-link" href="#">@(i + 1)</a>
+            </li>
+        }
+        <li class="page-item @(ViewBag.NumberOfPages == ViewBag.Page ? "disabled" : "")">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </li>
+    </ul>
+</nav>

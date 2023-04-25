@@ -26,7 +26,7 @@ namespace VivaniBack.Areas.admin.Controllers
         public IActionResult Index()
         {
             if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
-                return View(_context.products);
+                return View(_context.products.OrderByDescending(p => p.IsNew || p.IsBestSeller || p.IsTrendingProduct).ThenByDescending(p => p.Date));
 
             return Redirect("/admin/account");
         }
@@ -97,6 +97,7 @@ namespace VivaniBack.Areas.admin.Controllers
                 }
 
                 product.DiscountPercent ??= 0;
+                product.Date = DateTime.Now;
                 await _context.products.AddAsync(product);
                 product.MainImageUrl = await product.MainImage.SavePhotoAsync(_env.WebRootPath, "products");
                 if (product.ProductImagesFile != null)
@@ -207,6 +208,7 @@ namespace VivaniBack.Areas.admin.Controllers
                 productFromDb.Price = product.Price;
                 productFromDb.ProductCategoryId = product.ProductCategoryId;
                 productFromDb.ProductTypeId = product.ProductTypeId;
+                productFromDb.Date = DateTime.Now;
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

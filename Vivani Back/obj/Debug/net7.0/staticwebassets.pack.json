@@ -2269,6 +2269,10 @@
       "PackagePath": "staticwebassets/img/footer_bg.png"
     },
     {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/loadingGif.gif",
+      "PackagePath": "staticwebassets/img/loadingGif.gif"
+    },
+    {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/logo.png",
       "PackagePath": "staticwebassets/img/logo.png"
     },
@@ -2395,6 +2399,10 @@
     {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/whyChooseUs/3.png",
       "PackagePath": "staticwebassets/img/whyChooseUs/3.png"
+    },
+    {
+      "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/js/getProducts.js",
+      "PackagePath": "staticwebassets/js/getProducts.js"
     },
     {
       "Id": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/js/main.js",

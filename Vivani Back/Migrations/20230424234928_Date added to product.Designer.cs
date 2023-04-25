@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VivaniBack.DAL;
 
@@ -11,9 +12,11 @@ using VivaniBack.DAL;
 namespace VivaniBack.Migrations
 {
     [DbContext(typeof(VivaniDbContext))]
-    partial class VivaniDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230424234928_Date added to product")]
+    partial class Dateaddedtoproduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

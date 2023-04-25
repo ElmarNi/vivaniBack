@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using VivaniBack.DAL;
 using VivaniBack.Models;
@@ -40,10 +41,7 @@ namespace VivaniBack.Controllers
                 
                 AppUser newUser = new AppUser
                 {
-                    
-                    UserName = "admin",
-                    Firstname = "Elmar", 
-                    Lastname = "Ibrahimli",
+                    UserName = "admin"
                 };
                 var hashed = _hash.HashPassword(newUser, password);
                 newUser.PasswordHash = hashed;
@@ -54,8 +52,21 @@ namespace VivaniBack.Controllers
             {
                 homeSliders = _context.homeSliders,
                 whyChooseUs = _context.whyChooseUs,
-                trendingProductsImage = _context.trendingProductsImage
+                trendingProductsImage = _context.trendingProductsImage,
+                bestSellerProducts = _context.products.OrderByDescending(p => p.IsBestSeller).ThenByDescending(p => p.Date).Take(6)
             };
+
+            if (!await _context.products.AnyAsync(p => p.IsTrendingProduct))
+            {
+                List<Product> products = new List<Product>();
+                foreach (ProductCategory category in _context.ProductCategories.Include(c => c.Products))
+                {
+                    products.Add(category.Products.OrderByDescending(p => p.Date).FirstOrDefault());
+                }
+                vm.trendingProducts = products;
+            }
+            else vm.trendingProducts = _context.products.Where(p => p.IsTrendingProduct).Include(p => p.ProductCategory);
+
             return View(vm);
         }
     }

@@ -7,7 +7,20 @@ $(document).ready(function () {
       }
     });
   };
-  
+
+    $(window).scroll(function (e) {
+        if ($(window).scrollTop() > 200) $("#toTop").fadeIn("slow")
+        else $("#toTop").fadeOut("slow")
+    });
+
+    if ($(window).scrollTop() > 200) $("#toTop").fadeIn("slow")
+    else $("#toTop").fadeOut("slow")
+
+    $("#toTop").click(function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    })
+
   $('#slider .owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
@@ -142,11 +155,25 @@ $(document).ready(function () {
     const toSlider = document.querySelector('#toSlider');
     const fromInput = document.querySelector('#fromInput');
     const toInput = document.querySelector('#toInput');
-    fillSlider(fromSlider, toSlider, '#C6C6C6', '#ead2ac', toSlider);
-    setToggleAccessible(toSlider);
+    if (fromSlider != null && toSlider != null && fromInput != null && toInput != null) {
+        fillSlider(fromSlider, toSlider, '#C6C6C6', '#ead2ac', toSlider);
+        setToggleAccessible(toSlider);
 
-    fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
-    toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
-    fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
-    toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider); 
+        fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+        toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+        fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
+        toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+    }
+    $("#trending .products img").each(function (index, element) {
+        let height = $("#trending .products").prev().find("img").height() == 0 ? 600 : $("#trending .products").prev().find("img").height()
+        if (window.innerWidth > 992) $(this).height((height / 2) - $(this).parent().parent().next().height() - 46)
+        else $(this).height(166)
+    })
+    $(window).resize(function () {
+        $("#trending .products img").each(function (index, element) {
+            let height = $("#trending .products").prev().find("img").height() == 0 ? 200 : $("#trending .products").prev().find("img").height()
+            if (window.innerWidth > 992) $(this).height((height / 2) - $(this).parent().parent().next().height() - 46)
+            else $(this).height(166)
+        })
+    })
 });

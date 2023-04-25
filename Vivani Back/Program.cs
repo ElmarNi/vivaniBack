@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddControllersWithViews();
+//builder.Services.AddControllersWithViews();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
@@ -57,11 +57,5 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-// app.MapAreaControllerRoute(
-//     name: "admin",
-//     areaName: "admin",
-//     pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
-// );
 
 app.Run();

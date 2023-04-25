@@ -132,12 +132,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/Views/Shared/Components/ContactInfo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQ29udGFjdEluZm8vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/Views/Shared/ErrorPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/Views/Shared/ProductsNotFoundPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1Byb2R1Y3RzTm90Rm91bmRQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/Views/Shared/ProductsPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1Byb2R1Y3RzUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/Views/Shared/_CookieConsentPartial.cshtml]

@@ -47,6 +47,8 @@ namespace VivaniBack.Models
 		public ICollection<IFormFile> ProductImagesFile { get; set; }
 
 		public virtual ICollection<ProductImage> ProductImages { get; set; }
+
+		public DateTime Date { get; set; }
 	}
 }
 

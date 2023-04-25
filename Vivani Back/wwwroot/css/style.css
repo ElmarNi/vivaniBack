@@ -57,6 +57,18 @@ section {
     font-style: italic;
 }
 
+#toTop {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ead2ac;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
 header {
     padding: 10px 0;
 }
@@ -427,6 +439,7 @@ header .logo img {
 #popular-products .row.content .right-side .info {
     padding: 30px 70px;
     text-align: center;
+    width: 100%;
 }
 
 #popular-products .row.content .right-side .info h1 {
@@ -562,6 +575,10 @@ header .logo img {
     left: 300px;
 }
 
+#trending .item{
+    margin-bottom: 15px;
+}
+
 #trending .item,
 #products .item {
     padding: 10px;
@@ -578,8 +595,8 @@ header .logo img {
 #products item .image-wrapper img {
     height: 166px;
     width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 #trending .item .image-wrapper .discount,
@@ -772,9 +789,38 @@ header .logo img {
     -webkit-box-shadow: 0 0 10px #fff;
     box-shadow: 0 0 15px 4px #23202029;
 }
+#products .page-link {
+    color: black;
+    box-shadow: none;
+}
+#products .page-item.active .page-link {
+    background-color: #ead2ac;
+    border-color: #ead2ac;
+}
+#products .page-item.disabled .page-link {
+    background-color: #cdcdcd7a;
+}
 
-    @media (max-width: 768px) {
-            #trending .item .image-wrapper img, #products .item .image-wrapper img {
+#products .left-side h1 {
+    background: #ead2ac;
+    font-size: 22px;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+}
+
+#products .loadingGif{
+    width: 60px;
+    object-fit: contain;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%, -50%)
+}
+
+@media (max-width: 768px) {
+    #trending .item .image-wrapper img, #products .item .image-wrapper img {
         height: 200px;
     }
 
@@ -997,11 +1043,10 @@ footer .copy {
     background-image: url(../img/breadcurmb-img.png);
     height: 200px;
     margin-top: 90px;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    background-attachment: fixed;
 }
 
 #breadcrumb p {

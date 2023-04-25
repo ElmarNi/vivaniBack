@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using VivaniBack.DAL;
 using VivaniBack.Models;
 using VivaniBack.ViewModels;
@@ -16,11 +17,11 @@ namespace VivaniBack.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             ContactVM VM = new ContactVM
             {
-                contact = _context.contact.FirstOrDefault()
+                contact = await _context.contact.FirstOrDefaultAsync()
             };
             return View(VM);
         }
@@ -31,7 +32,7 @@ namespace VivaniBack.Controllers
         {
             ContactVM VM = new ContactVM
             {
-                contact = _context.contact.FirstOrDefault()
+                contact = await _context.contact.FirstOrDefaultAsync()
             };
             if (form == null)
             {

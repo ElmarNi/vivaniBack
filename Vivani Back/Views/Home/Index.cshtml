@@ -22,23 +22,23 @@
     </div>
 </section>
 
-<section id="whyChooseUs" style="padding: 20px 0">
+<section id="whyChooseUs" style="padding: 0">
     <div class="container">
         <div class="row">
-            @for (int i = 0; i < Model.whyChooseUs.Count(); i++)
+            @foreach (var item in Model.whyChooseUs)
             {
-                <div class='col-md-4 @(i == 1? "my-2 py-3 m-md-0 py-md-0" : "")'>
+                <div class='col-md-4 py-2'>
                     <div class="item align-items-center">
                         <div class="left mr-4">
-                            <img src="img/@Model.whyChooseUs.ElementAtOrDefault(i).IconUrl" />
-                            <img src="img/@Model.whyChooseUs.ElementAtOrDefault(i).IconUrl" />
+                            <img src="img/@item.IconUrl" />
+                            <img src="img/@item.IconUrl" />
                         </div>
                         <div class="right">
                             <div class="heading">
-                                @Html.Raw(Model.whyChooseUs.ElementAt(i).Heading)
+                                @Html.Raw(item.Heading)
                             </div>
                             <div class="content">
-                                @Html.Raw(Model.whyChooseUs.ElementAt(i).Content)
+                                @Html.Raw(item.Content)
                             </div>
                         </div>
                     </div>
@@ -63,132 +63,34 @@
             </div>
             <div class="col-lg-8 col-12 products">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
-                        <div class="item">
-                            <div class="image-wrapper mb-3">
-                                <div class="isNew">
-                                    New
+                    @foreach (var product in Model.bestSellerProducts)
+                    {
+                        <div class="col-sm-6 col-md-4">
+                            <div class="item">
+                                <div class="image-wrapper mb-3">
+                                    <div class="isNew @(product.IsNew ? "" : "d-none")">
+                                        Yeni
+                                    </div>
+                                    <div class="discount @(product.DiscountPercent != 0 ? "" : "d-none")">
+                                        @product.DiscountPercent %
+                                    </div>
+                                    <a asp-controller="products" asp-action="detail" asp-route-id="@product.Id" class="d-block text-center">
+                                        <img src="img/@product.MainImageUrl" class="img-fluid object-fit-contain">
+                                    </a>
+                                    <a href="" class="mainBtn">Daha ətraflı</a>
                                 </div>
-                                <div class="discount">
-                                    -10%
+                                <div class="content">
+                                    <a asp-controller="products" asp-action="detail" asp-route-id="@product.Id">
+                                        <h1>@product.Name</h1>
+                                    </a>
+                                    <p class="price d-flex justify-content-between">
+                                        @product.Price AZN
+                                        <span class="old-price @(product.DiscountPercent != 0 ? "" : "d-none")">@(product.Price - (product.Price * product.DiscountPercent / 100)) AZN</span>
+                                    </p>
                                 </div>
-                                <a href="">
-                                    <img src="img/p1.jpg" class="img-fluid" alt="">
-                                </a>
-                                <a href="" class="mainBtn">Daha ətraflı</a>
-                            </div>
-                            <div class="content">
-                                <a href="">
-                                    <h1>Tincidunt Ut Laoreet</h1>
-                                </a>
-                                <p class="price d-flex justify-content-between">
-                                    340AZN<span class="old-price">400AZN</span>
-                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
-                        <div class="item">
-                            <div class="image-wrapper mb-3">
-                                <div class="isNew">
-                                    New
-                                </div>
-                                <a href="">
-                                    <img src="img/p2.jpg" class="img-fluid" alt="">
-                                </a>
-                                <a href="" class="mainBtn">Daha ətraflı</a>
-                            </div>
-                            <div class="content">
-                                <a href="">
-                                    <h1>Shrinking From Toil</h1>
-                                </a>
-                                <p class="price d-flex justify-content-between">
-                                    340AZN
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 mt-4 mt-lg-0">
-                        <div class="item">
-                            <div class="image-wrapper mb-3">
-                                <a href="">
-                                    <img src="img/p3.jpg" class="img-fluid" alt="">
-                                </a>
-                                <a href="" class="mainBtn">Daha ətraflı</a>
-                            </div>
-                            <div class="content">
-                                <a href="">
-                                    <h1>Shrinking From Toil</h1>
-                                </a>
-                                <p class="price d-flex justify-content-between">
-                                    340AZN
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 mt-4">
-                        <div class="item">
-                            <div class="image-wrapper mb-3">
-                                <div class="isNew">
-                                    New
-                                </div>
-                                <div class="discount">
-                                    -10%
-                                </div>
-                                <a href="">
-                                    <img src="img/p1.jpg" class="img-fluid" alt="">
-                                </a>
-                                <a href="" class="mainBtn">Daha ətraflı</a>
-                            </div>
-                            <div class="content">
-                                <a href="">
-                                    <h1>Tincidunt Ut Laoreet</h1>
-                                </a>
-                                <p class="price d-flex justify-content-between">
-                                    340AZN<span class="old-price">400AZN</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 mt-4">
-                        <div class="item">
-                            <div class="image-wrapper mb-3">
-                                <div class="isNew">
-                                    New
-                                </div>
-                                <a href="">
-                                    <img src="img/p2.jpg" class="img-fluid" alt="">
-                                </a>
-                                <a href="" class="mainBtn">Daha ətraflı</a>
-                            </div>
-                            <div class="content">
-                                <a href="">
-                                    <h1>Shrinking From Toil</h1>
-                                </a>
-                                <p class="price d-flex justify-content-between">
-                                    340AZN
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 mt-4">
-                        <div class="item">
-                            <div class="image-wrapper mb-3">
-                                <a href="">
-                                    <img src="img/p3.jpg" class="img-fluid" alt="">
-                                </a>
-                                <a href="" class="mainBtn">Daha ətraflı</a>
-                            </div>
-                            <div class="content">
-                                <a href="">
-                                    <h1>Shrinking From Toil</h1>
-                                </a>
-                                <p class="price d-flex justify-content-between">
-                                    340AZN
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
         </div>
@@ -209,93 +111,34 @@
         <div class="row mb-2 mb-md-5">
             <div class="col-12 categories text-center">
                 <ul class="d-flex justify-content-center flex-wrap">
-                    <li>
-                        <a href="" data-id="ring" class="active">Üzüklər</a>
-                    </li>
-                    <li>
-                        <a href="" data-id="earrings">Sırğalar</a>
-                    </li>
-                    <li>
-                        <a href="" data-id="bracelet">Qolbaqlar</a>
-                    </li>
-                    <li>
-                        <a href="" data-id="necklace">Boyunbağılar</a>
-                    </li>
+                    @for (int i = 0; i < Model.trendingProducts.Count(); i++)
+                    {
+                        <li>
+                            <a href="#" data-id="@Model.trendingProducts.ElementAtOrDefault(i).ProductCategoryId" class="@(i == 0 ? "active" : "")">@Model.trendingProducts.ElementAtOrDefault(i).ProductCategory.Name</a>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
-        <div class="row content active m-0" data-id="ring">
-            <div class="col-md-6 left-side p-0">
-                <a href="">
-                    <img src="img/ring.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-            <div class="col-md-6 right-side d-flex align-items-center p-0">
-                <div class="info">
-                    <h1>Cartier Love Gold Ring</h1>
-                    <p>
-                        The DiamondShop Lovely Necklaces collection is a varied and vibrant selection of
-                        exceptionally designed pieces adorned with the brand’s renowned precision cut clear and
-                        color crystals. Our necklaces can be perfectly matched with a singular.
-                    </p>
-                    <a class="mainBtn" href="">Daha ətraflı</a>
+
+        @for (int i = 0; i < Model.trendingProducts.Count(); i++)
+        {
+            <div class="row content m-0 @(i == 0 ? "active" : "")" style="@(i != 0 ? "display:none" : "")" data-id="@Model.trendingProducts.ElementAtOrDefault(i).ProductCategoryId">
+                <div class="col-lg-6 left-side p-0">
+                    <a asp-controller="products" asp-action="detail" asp-route-id="@Model.trendingProducts.ElementAtOrDefault(i).Id">
+                        <img src="img/@Model.trendingProducts.ElementAtOrDefault(i).MainImageUrl" width="100%" height="100%" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 right-side d-flex align-items-center p-0">
+                    <div class="info">
+                        <h1>@Model.trendingProducts.ElementAtOrDefault(i).Name</h1>
+                        @Html.Raw(Model.trendingProducts.ElementAtOrDefault(i).Description)
+                        <a class="mainBtn" asp-controller="products" asp-action="detail" asp-route-id="@Model.trendingProducts.ElementAtOrDefault(i).Id">Daha ətraflı</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row content m-0" style="display: none;" data-id="earrings">
-            <div class="col-lg-6 left-side p-0">
-                <a href="">
-                    <img src="img/ear.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6 right-side d-flex align-items-center p-0">
-                <div class="info">
-                    <h1>Amulette de Cartier</h1>
-                    <p>
-                        The DiamondShop Lovely Necklaces collection is a varied and vibrant selection of
-                        exceptionally designed pieces adorned with the brand’s renowned precision cut clear and
-                        color crystals. Our necklaces can be perfectly matched with a singular.
-                    </p>
-                    <a class="mainBtn" href="">Daha ətraflı</a>
-                </div>
-            </div>
-        </div>
-        <div class="row content m-0" style="display: none;" data-id="bracelet">
-            <div class="col-lg-6 left-side p-0">
-                <a href="">
-                    <img src="img/ring.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6 right-side d-flex align-items-center p-0">
-                <div class="info">
-                    <h1>Cartier Love Gold Ring</h1>
-                    <p>
-                        The DiamondShop Lovely Necklaces collection is a varied and vibrant selection of
-                        exceptionally designed pieces adorned with the brand’s renowned precision cut clear and
-                        color crystals. Our necklaces can be perfectly matched with a singular.
-                    </p>
-                    <a class="mainBtn" href="">Daha ətraflı</a>
-                </div>
-            </div>
-        </div>
-        <div class="row content m-0" style="display: none;" data-id="necklace">
-            <div class="col-lg-6 left-side p-0">
-                <a href="">
-                    <img src="img/neck.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6 right-side d-flex align-items-center p-0">
-                <div class="info">
-                    <h1>Lovely Necklaces</h1>
-                    <p>
-                        The DiamondShop Lovely Necklaces collection is a varied and vibrant selection of
-                        exceptionally designed pieces adorned with the brand’s renowned precision cut clear and
-                        color crystals. Our necklaces can be perfectly matched with a singular.
-                    </p>
-                    <a class="mainBtn" href="">Daha ətraflı</a>
-                </div>
-            </div>
-        </div>
+        }
+
     </div>
 </section>
 
