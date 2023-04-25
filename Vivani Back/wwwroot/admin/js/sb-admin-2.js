@@ -91,5 +91,6 @@
     change_img("#productCreateAdmin #ProductImagesFile", "#productCreateAdmin .detailImages", true);
     change_img("#productUpdateAdmin #MainImage", "#productUpdateAdmin .newImage img");
     change_img("#productUpdateAdmin #ProductImagesFile", "#productUpdateAdmin .newDetailImages", true);
+    change_img("#adminTrendingProducts #Image", "#adminTrendingProducts .newImage img");
     
 })(jQuery); // End of use strict

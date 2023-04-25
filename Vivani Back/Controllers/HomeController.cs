@@ -52,7 +52,7 @@ namespace VivaniBack.Controllers
             {
                 homeSliders = _context.homeSliders,
                 whyChooseUs = _context.whyChooseUs,
-                trendingProductsImage = _context.trendingProductsImage,
+                trendingProductsImage = await _context.trendingProductsImage.FirstOrDefaultAsync(),
                 bestSellerProducts = _context.products.OrderByDescending(p => p.IsBestSeller).ThenByDescending(p => p.Date).Take(6)
             };
 

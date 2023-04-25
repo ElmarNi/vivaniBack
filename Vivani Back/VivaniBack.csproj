@@ -22,6 +22,7 @@
     <None Remove="ViewComponents\" />
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\ContactInfo\" />
+    <None Remove="Areas\admin\Views\TrendingProductsImage\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
@@ -64,6 +65,8 @@
     <Folder Include="ViewComponents\" />
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\ContactInfo\" />
+    <Folder Include="Areas\admin\Views\TrendingProductsImage\" />
+    <Folder Include="wwwroot\img\trendingProducts\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -82,5 +85,6 @@
     <Content Remove="wwwroot\img\about\" />
     <Content Remove="wwwroot\img\slider\" />
     <Content Remove="wwwroot\img\products\" />
+    <Content Remove="wwwroot\img\trendingProducts\" />
   </ItemGroup>
 </Project>

@@ -34,6 +34,19 @@ namespace VivaniBack.Areas.admin.Controllers
         }
 
         [HttpPost]
+        public async Task<bool> updateContactMessageShowInHomeStatus(int? id)
+        {
+            if (id != null && await _context.contactForms.AnyAsync(c => c.Id == (int)id))
+            {
+                ContactForm message = await _context.contactForms.FindAsync((int)id);
+                message.ShowInHome = !message.IsResponsed;
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
+
+        [HttpPost]
         public async Task<bool> deleteSlider(int? id)
         {
             if (id != null && await _context.homeSliders.AnyAsync(c => c.Id == (int)id))

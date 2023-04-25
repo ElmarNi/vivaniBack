@@ -25,5 +25,7 @@ namespace VivaniBack.Models
         public DateTime Date { get; set; }
 
         public bool IsResponsed { get; set; }
+
+        public bool ShowInHome { get; set; }
     }
 }

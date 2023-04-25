@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lIpbD7vyfew22Vkt9ekUi04JuOTF9bbjS3xO3P9Z+Gs=",
+  "Hash": "d1wcbPtAn4vYUzGR+fFzpNZAmr6PcuazudnjaZu4sgw=",
   "Source": "VivaniBack",
   "BasePath": "_content/VivaniBack",
   "Mode": "Default",
@@ -9775,23 +9775,6 @@
       "OriginalItemSpec": "wwwroot/img/p3.jpg"
     },
     {
-      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/product-bnr.jpg",
-      "SourceId": "VivaniBack",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
-      "BasePath": "_content/VivaniBack",
-      "RelativePath": "img/product-bnr.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/product-bnr.jpg"
-    },
-    {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/02f27fb0-0c73-4958-a7be-c32623a29ebeslider1.jpg",
       "SourceId": "VivaniBack",
       "SourceType": "Discovered",
@@ -9894,6 +9877,23 @@
       "OriginalItemSpec": "wwwroot/img/products/38e2f98e-2cfb-409b-a23e-3ea7aecd4ecfslider2.jpg"
     },
     {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/4f7e6fac-320c-4c89-801d-06f94d81f571slider2.jpg",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "img/products/4f7e6fac-320c-4c89-801d-06f94d81f571slider2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/products/4f7e6fac-320c-4c89-801d-06f94d81f571slider2.jpg"
+    },
+    {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/598360ef-9acc-4daf-9cc7-46b95da15194slider1.jpg",
       "SourceId": "VivaniBack",
       "SourceType": "Discovered",
@@ -9909,6 +9909,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/products/598360ef-9acc-4daf-9cc7-46b95da15194slider1.jpg"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/846b23bc-8c0d-41f5-871e-82718797a1f2slider1.jpg",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "img/products/846b23bc-8c0d-41f5-871e-82718797a1f2slider1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/products/846b23bc-8c0d-41f5-871e-82718797a1f2slider1.jpg"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/85e8418e-9e1f-4e4d-9ec6-72f0313343fdslider2.jpg",
@@ -9945,6 +9962,23 @@
       "OriginalItemSpec": "wwwroot/img/products/bea8f696-8986-4a9b-9a52-85d48cb90c77slider2.jpg"
     },
     {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/c51b20b0-c9ae-489e-a0f1-b80d8dd5f6f1slider2.jpg",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "img/products/c51b20b0-c9ae-489e-a0f1-b80d8dd5f6f1slider2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/products/c51b20b0-c9ae-489e-a0f1-b80d8dd5f6f1slider2.jpg"
+    },
+    {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/c61bcf41-2951-4f43-a4fc-5c3a59735d65slider1.jpg",
       "SourceId": "VivaniBack",
       "SourceType": "Discovered",
@@ -9960,6 +9994,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/products/c61bcf41-2951-4f43-a4fc-5c3a59735d65slider1.jpg"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/ca232d9e-c1f3-4f29-80d2-e12d58c270f0slider1.jpg",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "img/products/ca232d9e-c1f3-4f29-80d2-e12d58c270f0slider1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/products/ca232d9e-c1f3-4f29-80d2-e12d58c270f0slider1.jpg"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/products/cfb6c737-a1a4-4f50-ad7d-3e57b2f20913slider1.jpg",
@@ -10147,6 +10198,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/testimonials-5.jpg"
+    },
+    {
+      "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/trendingProducts/3d0dbffd-5a37-40a9-8933-4e7cffbdc61aproduct-bnr.jpg",
+      "SourceId": "VivaniBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/",
+      "BasePath": "_content/VivaniBack",
+      "RelativePath": "img/trendingProducts/3d0dbffd-5a37-40a9-8933-4e7cffbdc61aproduct-bnr.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/trendingProducts/3d0dbffd-5a37-40a9-8933-4e7cffbdc61aproduct-bnr.jpg"
     },
     {
       "Identity": "/Users/ibrahimlien/Desktop/BackEnd/vivaniBack/Vivani Back/wwwroot/img/whyChooseUs/.DS_Store",

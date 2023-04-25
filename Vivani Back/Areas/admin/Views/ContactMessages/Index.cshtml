@@ -17,6 +17,7 @@
                                 <th scope="col">Email</th>
                                 <th scope="col">Nömrə</th>
                                 <th scope="col">Mesaj</th>
+                                <th scope="col">Ana səhifədə görsənsin?</th>
                                 <th scope="col">Tarix</th>
                                 <th scope="col">Cavablanıb?</th>
                                 <th scope="col"></th>
@@ -31,10 +32,12 @@
                                     <td>@item.Email</td>
                                     <td>@item.PhoneNumber</td>
                                     <td data-message="@item.Message">@(item.Message.Length > 10 ? item.Message.Substring(0, 10) + "..." : item.Message)</td>
+                                    <td>@(item.ShowInHome ? "HƏ" : "YOX")</td>
                                     <td>@item.Date</td>
                                     <td>@(item.IsResponsed ? "HƏ" : "YOX")</td>
-                                    <td>
+                                    <td class="text-right">
                                         <a style="width: 114px" href="#" class="btn btn-warning updateStatus" data-id="@item.Id">Status dəyiş</a>
+                                        <a style="width: 194px" href="#" class="btn btn-dark updateHomeStatus my-2" data-id="@item.Id">Ana səhifə status dəyiş</a>
                                         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#fullMessageInfo" data-id="@item.Id">Ətraflı</button>
                                 </tr>
                             }
@@ -79,6 +82,10 @@
                         <label>Cavablanıb</label>
                         <p class="isResponsed"></p>
                     </div>
+                    <div class="col-4">
+                        <label>Ana səhifədə görsənsin?</label>
+                        <p class="showInHome"></p>
+                    </div>
                     <div class="col-12">
                         <label>Mesaj</label>
                         <p class="message"></p>
@@ -87,6 +94,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-warning updateStatus">Status dəyiş</button>
+                <button type="button" class="btn btn-dark updateHomeStatus">Ana səhifə status dəyiş</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
             </div>
         </div>

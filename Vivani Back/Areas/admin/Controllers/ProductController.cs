@@ -98,6 +98,13 @@ namespace VivaniBack.Areas.admin.Controllers
 
                 product.DiscountPercent ??= 0;
                 product.Date = DateTime.Now;
+                Product trendingProduct = _context.ProductCategories.Where(c => c.Id == product.ProductCategoryId).Include(c => c.Products)
+                                                                    .FirstOrDefault().Products.Where(p => p.IsTrendingProduct).FirstOrDefault();
+                List<Product> bestSellerProducts = _context.products.Where(p => p.IsBestSeller).OrderByDescending(p => p.Date).ToList();
+
+                if (trendingProduct != null && product.IsTrendingProduct) trendingProduct.IsTrendingProduct = false;
+
+                if (bestSellerProducts.Count() == 6 && product.IsBestSeller) bestSellerProducts.LastOrDefault().IsBestSeller = false;
                 await _context.products.AddAsync(product);
                 product.MainImageUrl = await product.MainImage.SavePhotoAsync(_env.WebRootPath, "products");
                 if (product.ProductImagesFile != null)
@@ -112,6 +119,7 @@ namespace VivaniBack.Areas.admin.Controllers
                         await _context.AddAsync(productImage);
                     }
                 }
+
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -199,6 +207,14 @@ namespace VivaniBack.Areas.admin.Controllers
                         await _context.AddAsync(productImage);
                     }
                 }
+                Product trendingProduct = _context.ProductCategories.Where(c => c.Id == product.ProductCategoryId).Include(c => c.Products)
+                                                                    .FirstOrDefault().Products.Where(p => p.IsTrendingProduct).FirstOrDefault();
+                List<Product> bestSellerProducts = _context.products.Where(p => p.IsBestSeller).OrderByDescending(p => p.Date).ToList();
+
+                if (trendingProduct != null && product.IsTrendingProduct) trendingProduct.IsTrendingProduct = false;
+
+                if (bestSellerProducts.Count() == 6 && product.IsBestSeller) bestSellerProducts.LastOrDefault().IsBestSeller = false;
+
                 productFromDb.Description = product.Description;
                 productFromDb.DiscountPercent = product.DiscountPercent;
                 productFromDb.IsBestSeller = product.IsBestSeller;

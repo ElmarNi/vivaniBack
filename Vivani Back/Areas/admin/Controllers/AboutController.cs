@@ -36,7 +36,7 @@ namespace VivaniBack.Areas.admin.Controllers
             {
                 if (!ModelState.IsValid) return View(about);
 
-                About aboutDb = _context.about.FirstOrDefault();
+                About aboutDb = await _context.about.FirstOrDefaultAsync();
                 if (aboutDb == null) return NotFound();
 
                 if (about.Image != null)
